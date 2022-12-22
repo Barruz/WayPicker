@@ -14,6 +14,28 @@
 		4544A4972954BE5B004EB8E8 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544A4962954BE5B004EB8E8 /* Helpers.swift */; };
 		4544A49A2954BF73004EB8E8 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4544A4992954BF73004EB8E8 /* Pacifico-Regular.ttf */; };
 		4544A49C2954BF8F004EB8E8 /* Quicksand-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4544A49B2954BF8F004EB8E8 /* Quicksand-VariableFont_wght.ttf */; };
+		4544A49F2954C17A004EB8E8 /* Checkmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544A49E2954C17A004EB8E8 /* Checkmark.swift */; };
+		4544A4A12954C1B2004EB8E8 /* ButtonPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544A4A02954C1B2004EB8E8 /* ButtonPalette.swift */; };
+		4544A4A32954C1DD004EB8E8 /* ButtonInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544A4A22954C1DD004EB8E8 /* ButtonInfo.swift */; };
+		4544A4A52954C1FC004EB8E8 /* ButtonDone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544A4A42954C1FC004EB8E8 /* ButtonDone.swift */; };
+		4544A4A72954C21B004EB8E8 /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544A4A62954C21B004EB8E8 /* Logo.swift */; };
+		4544A4A92954C23F004EB8E8 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544A4A82954C23F004EB8E8 /* Menu.swift */; };
+		4544A4AB2954C260004EB8E8 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544A4AA2954C260004EB8E8 /* IntroView.swift */; };
+		4544A4AD2954C274004EB8E8 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544A4AC2954C274004EB8E8 /* ThemeView.swift */; };
+		4544A4AF2954C286004EB8E8 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544A4AE2954C286004EB8E8 /* InfoView.swift */; };
+		4544A4B12954C2B8004EB8E8 /* InfoText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544A4B02954C2B8004EB8E8 /* InfoText.swift */; };
+		4544A4B32954C2EF004EB8E8 /* LocationPointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544A4B22954C2EF004EB8E8 /* LocationPointer.swift */; };
+		4544A4B52954C310004EB8E8 /* CrossroadFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544A4B42954C310004EB8E8 /* CrossroadFrame.swift */; };
+		4544A4B72954C33D004EB8E8 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544A4B62954C33D004EB8E8 /* DetailView.swift */; };
+		4544A4B92954C359004EB8E8 /* DirectionArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544A4B82954C359004EB8E8 /* DirectionArrow.swift */; };
+		4544A4BB2954C38D004EB8E8 /* TileFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544A4BA2954C38D004EB8E8 /* TileFrame.swift */; };
+		4544A4BE2954C44A004EB8E8 /* Crossroad1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544A4BD2954C44A004EB8E8 /* Crossroad1.swift */; };
+		4544A4C02954C45A004EB8E8 /* Crossroad2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544A4BF2954C45A004EB8E8 /* Crossroad2.swift */; };
+		4544A4C22954C464004EB8E8 /* Crossroad3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544A4C12954C464004EB8E8 /* Crossroad3.swift */; };
+		4544A4C42954C472004EB8E8 /* Crossroad4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544A4C32954C472004EB8E8 /* Crossroad4.swift */; };
+		4544A4C62954C47A004EB8E8 /* Crossroad5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544A4C52954C47A004EB8E8 /* Crossroad5.swift */; };
+		4544A4C82954C484004EB8E8 /* Crossroad6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544A4C72954C484004EB8E8 /* Crossroad6.swift */; };
+		4544A4CA2954C53A004EB8E8 /* DetailUnknownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544A4C92954C53A004EB8E8 /* DetailUnknownView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +48,28 @@
 		4544A4992954BF73004EB8E8 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
 		4544A49B2954BF8F004EB8E8 /* Quicksand-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		4544A49D2954C08D004EB8E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4544A49E2954C17A004EB8E8 /* Checkmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkmark.swift; sourceTree = "<group>"; };
+		4544A4A02954C1B2004EB8E8 /* ButtonPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPalette.swift; sourceTree = "<group>"; };
+		4544A4A22954C1DD004EB8E8 /* ButtonInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonInfo.swift; sourceTree = "<group>"; };
+		4544A4A42954C1FC004EB8E8 /* ButtonDone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDone.swift; sourceTree = "<group>"; };
+		4544A4A62954C21B004EB8E8 /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
+		4544A4A82954C23F004EB8E8 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		4544A4AA2954C260004EB8E8 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IntroView.swift; path = WayPicker/Elements/IntroView.swift; sourceTree = SOURCE_ROOT; };
+		4544A4AC2954C274004EB8E8 /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ThemeView.swift; path = WayPicker/Elements/ThemeView.swift; sourceTree = SOURCE_ROOT; };
+		4544A4AE2954C286004EB8E8 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InfoView.swift; path = WayPicker/Elements/InfoView.swift; sourceTree = SOURCE_ROOT; };
+		4544A4B02954C2B8004EB8E8 /* InfoText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoText.swift; sourceTree = "<group>"; };
+		4544A4B22954C2EF004EB8E8 /* LocationPointer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPointer.swift; sourceTree = "<group>"; };
+		4544A4B42954C310004EB8E8 /* CrossroadFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossroadFrame.swift; sourceTree = "<group>"; };
+		4544A4B62954C33D004EB8E8 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailView.swift; path = WayPicker/Elements/DetailView.swift; sourceTree = SOURCE_ROOT; };
+		4544A4B82954C359004EB8E8 /* DirectionArrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DirectionArrow.swift; path = WayPicker/Views/DirectionArrow.swift; sourceTree = SOURCE_ROOT; };
+		4544A4BA2954C38D004EB8E8 /* TileFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileFrame.swift; sourceTree = "<group>"; };
+		4544A4BD2954C44A004EB8E8 /* Crossroad1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crossroad1.swift; sourceTree = "<group>"; };
+		4544A4BF2954C45A004EB8E8 /* Crossroad2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crossroad2.swift; sourceTree = "<group>"; };
+		4544A4C12954C464004EB8E8 /* Crossroad3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crossroad3.swift; sourceTree = "<group>"; };
+		4544A4C32954C472004EB8E8 /* Crossroad4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crossroad4.swift; sourceTree = "<group>"; };
+		4544A4C52954C47A004EB8E8 /* Crossroad5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crossroad5.swift; sourceTree = "<group>"; };
+		4544A4C72954C484004EB8E8 /* Crossroad6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crossroad6.swift; sourceTree = "<group>"; };
+		4544A4C92954C53A004EB8E8 /* DetailUnknownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailUnknownView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +125,11 @@
 		4544A4922954BD9E004EB8E8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4544A4B62954C33D004EB8E8 /* DetailView.swift */,
+				4544A4C92954C53A004EB8E8 /* DetailUnknownView.swift */,
+				4544A4AE2954C286004EB8E8 /* InfoView.swift */,
+				4544A4AC2954C274004EB8E8 /* ThemeView.swift */,
+				4544A4AA2954C260004EB8E8 /* IntroView.swift */,
 				4544A4862954BCD3004EB8E8 /* ContentView.swift */,
 			);
 			path = Views;
@@ -89,6 +138,18 @@
 		4544A4932954BDAE004EB8E8 /* Elements */ = {
 			isa = PBXGroup;
 			children = (
+				4544A4B82954C359004EB8E8 /* DirectionArrow.swift */,
+				4544A4BA2954C38D004EB8E8 /* TileFrame.swift */,
+				4544A49E2954C17A004EB8E8 /* Checkmark.swift */,
+				4544A4A02954C1B2004EB8E8 /* ButtonPalette.swift */,
+				4544A4A22954C1DD004EB8E8 /* ButtonInfo.swift */,
+				4544A4A42954C1FC004EB8E8 /* ButtonDone.swift */,
+				4544A4A62954C21B004EB8E8 /* Logo.swift */,
+				4544A4A82954C23F004EB8E8 /* Menu.swift */,
+				4544A4B02954C2B8004EB8E8 /* InfoText.swift */,
+				4544A4B22954C2EF004EB8E8 /* LocationPointer.swift */,
+				4544A4B42954C310004EB8E8 /* CrossroadFrame.swift */,
+				4544A4BC2954C3C5004EB8E8 /* Crossroads */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -100,6 +161,19 @@
 				4544A4992954BF73004EB8E8 /* Pacifico-Regular.ttf */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		4544A4BC2954C3C5004EB8E8 /* Crossroads */ = {
+			isa = PBXGroup;
+			children = (
+				4544A4BD2954C44A004EB8E8 /* Crossroad1.swift */,
+				4544A4BF2954C45A004EB8E8 /* Crossroad2.swift */,
+				4544A4C12954C464004EB8E8 /* Crossroad3.swift */,
+				4544A4C32954C472004EB8E8 /* Crossroad4.swift */,
+				4544A4C52954C47A004EB8E8 /* Crossroad5.swift */,
+				4544A4C72954C484004EB8E8 /* Crossroad6.swift */,
+			);
+			path = Crossroads;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,8 +249,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				4544A4872954BCD3004EB8E8 /* ContentView.swift in Sources */,
+				4544A4C62954C47A004EB8E8 /* Crossroad5.swift in Sources */,
+				4544A4C02954C45A004EB8E8 /* Crossroad2.swift in Sources */,
+				4544A4AD2954C274004EB8E8 /* ThemeView.swift in Sources */,
+				4544A4A52954C1FC004EB8E8 /* ButtonDone.swift in Sources */,
+				4544A4B92954C359004EB8E8 /* DirectionArrow.swift in Sources */,
+				4544A4BE2954C44A004EB8E8 /* Crossroad1.swift in Sources */,
+				4544A4A32954C1DD004EB8E8 /* ButtonInfo.swift in Sources */,
+				4544A4B52954C310004EB8E8 /* CrossroadFrame.swift in Sources */,
+				4544A4C82954C484004EB8E8 /* Crossroad6.swift in Sources */,
+				4544A4CA2954C53A004EB8E8 /* DetailUnknownView.swift in Sources */,
+				4544A4AF2954C286004EB8E8 /* InfoView.swift in Sources */,
 				4544A4972954BE5B004EB8E8 /* Helpers.swift in Sources */,
+				4544A4B12954C2B8004EB8E8 /* InfoText.swift in Sources */,
 				4544A4852954BCD3004EB8E8 /* WayPickerApp.swift in Sources */,
+				4544A4C22954C464004EB8E8 /* Crossroad3.swift in Sources */,
+				4544A4B72954C33D004EB8E8 /* DetailView.swift in Sources */,
+				4544A4B32954C2EF004EB8E8 /* LocationPointer.swift in Sources */,
+				4544A4A12954C1B2004EB8E8 /* ButtonPalette.swift in Sources */,
+				4544A4BB2954C38D004EB8E8 /* TileFrame.swift in Sources */,
+				4544A4C42954C472004EB8E8 /* Crossroad4.swift in Sources */,
+				4544A4A92954C23F004EB8E8 /* Menu.swift in Sources */,
+				4544A4AB2954C260004EB8E8 /* IntroView.swift in Sources */,
+				4544A4A72954C21B004EB8E8 /* Logo.swift in Sources */,
+				4544A49F2954C17A004EB8E8 /* Checkmark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
