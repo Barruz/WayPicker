@@ -9,7 +9,12 @@ import SwiftUI
 
 struct InfoView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Menu()
+            InfoText()
+                .padding([.leading, .trailing], 20.0).scrollIndicators(.visible)
+            NavigationLink (destination: IntroView()){ButtonDone()}
+        }.background(Color("Beige")).navigationBarBackButtonHidden(true)
     }
 }
 
