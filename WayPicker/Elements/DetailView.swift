@@ -14,9 +14,55 @@ struct DetailView: View {
     var theme: Theme = Theme.light
     var selectedDirection: Direction = Direction.left
     
+    func getTurnNumber(directionAmount: Int) -> String {
+        let turnNumber: Int = Int.random(in: 1...directionAmount/2)
+        if (turnNumber == 1) {
+            return "first"
+        } else if (turnNumber == 2) {
+            return "second"
+        } else {
+            return String(turnNumber)
+        }
+    }
+    
+    /*init(crossroadId: Int, directions: [Direction], directionAmount: Int) {
+        self.crossroadId = crossroadId
+        self.directions = directions
+        self.directionAmount = directionAmount
+        self.selectedDirection = directions.randomElement() ?? Direction.left
+        }*/
+    
+    func getDirectionDesc(selectedDirection: Direction, directionAmount: Int) -> Text {
+        
+        var textsize: CGFloat = 60
+        var description: String = "go " + selectedDirection.rawValue
+        
+        if (selectedDirection == Direction.forward) {
+            textsize = 40
+        }
+        
+        if (directionAmount > 3) {
+            textsize = 40
+            let turnNumber = getTurnNumber(directionAmount: directionAmount)
+            description = "take the " + turnNumber + " turn on the " + selectedDirection.rawValue
+        }
+        
+        return Text(description).font(.custom("Quicksand", size: textsize)).fontWeight(.bold).foregroundColor(Color("Chocolate"))
+    }
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Menu()
+            CrossroadFrame(theme: theme, crossroadId: crossroadId, directions: directions, directionAmount: directionAmount)
+                .padding(.top, 40.0)
+            Spacer()
+            DirectionArrow(direction: selectedDirection)
+            Spacer()
+                .frame(height: 55.0)
+                getDirectionDesc(selectedDirection: selectedDirection, directionAmount: directionAmount).multilineTextAlignment(.center)
+            Spacer()
+            NavigationLink (destination: IntroView()){ButtonDone()}
+        }.background(Color("Beige")).navigationBarBackButtonHidden(true)
     }
 }
 
