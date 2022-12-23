@@ -8,64 +8,52 @@
 import SwiftUI
 
 struct ThemeView: View {
+    @AppStorage("Theme") private var selectedTheme = ThemeName.basic.rawValue
+    let theme = ThemeManager.shared.getTheme()
+    
+
     var body: some View {
         VStack {
             Menu()
-            Text("Pick your theme").font(.custom("Quicksand",                   size: 22))
-                .fontWeight(.semibold)
-                .foregroundColor(Color("Chocolate"))
-                .padding(.top, 20.0)
-            HStack{
-                Spacer()
-                VStack{
-                    ZStack{
-                        Image("tile-light-01")
-                        Checkmark()
-                            .padding(.leading, 130.0)
-                            .padding(.top, -90.0)
-                    }
-                    Text("Light").font(.custom("Quicksand",        size: 22))
-                        .fontWeight(.semibold)
-                        .foregroundColor(Color("Chocolate"))
-                    .padding(.top, 1.0)
-                    
-                }
-                Spacer()
-                VStack{
-                    Image("tile-light-01")
-                        .padding(.bottom, 12.0)
-                    Text("Dark").font(.custom("Quicksand",                   size: 22))
-                        .fontWeight(.semibold)
-                        .foregroundColor(Color("Chocolate"))
-                    
-                }
-                Spacer()
-            }.padding(.top, 40.0)
-            HStack{
-                Spacer()
-                VStack{
-                    Image("tile-light-01")
-                    Text("Road Signs").font(.custom("Quicksand",                   size: 22))
-                        .fontWeight(.semibold)
-                        .foregroundColor(Color("Chocolate"))
-                        .padding(.top, 10.0)
-                    
-                }                    .padding(.leading, 5.0)
-                Spacer()
-                VStack{
-                    Image("tile-light-01")
-                    Text("Sketches").font(.custom("Quicksand",                   size: 22))
-                        .fontWeight(.semibold)
-                        .foregroundColor(Color("Chocolate"))
-                        .padding(.top, 10.0)
-                    
-                }                    .padding(.trailing, -15.0)
-                Spacer()
-            }.padding(.top, 10.0)
+            Spacer()
+            Button {
+                applySelectedTheme(selectedThemeName: ThemeName.basic.rawValue)
+            } label: {
+                ZStack{
+                    CrossroadWrapper( crossroadId: 1, directions: [Direction.left, Direction.right, Direction.forward], directionAmount: 3, staticTheme: ThemeName.basic)
+                        .padding(.bottom, 10.0)
+                    Checkmark().offset(x: 70, y: -70).opacity(ThemeName.basic.rawValue == selectedTheme ? 1 : 0)
+                }}
+            Button {
+                applySelectedTheme(selectedThemeName: ThemeName.roadsigns.rawValue)
+            } label: {
+                ZStack{
+                    CrossroadWrapper( crossroadId: 1, directions: [Direction.left, Direction.right, Direction.forward], directionAmount: 3, staticTheme: ThemeName.roadsigns).padding(.bottom, 10.0)
+                    Checkmark().offset(x: 70, y: -70).opacity(ThemeName.roadsigns.rawValue == selectedTheme ? 1 : 0)
+                }}
+            Button {
+                applySelectedTheme(selectedThemeName: ThemeName.sketches.rawValue)
+            } label: {
+                ZStack{
+                    RoundedRectangle(cornerRadius: 5)
+                        .fill(theme.primary)
+                        .border(.gray)
+                        .frame(width: 150.0, height: 150.0)
+                    CrossroadWrapper( crossroadId: 1, directions: [Direction.left, Direction.right, Direction.forward], directionAmount: 3, staticTheme: ThemeName.sketches)
+                    Rectangle()
+                        .stroke(theme.primary, lineWidth: 10.0)
+                        .frame(width: 160.0, height: 160.0)
+                    Checkmark().offset(x: 70, y: -70).opacity(ThemeName.sketches.rawValue == selectedTheme ? 1 : 0)
+                }}
             Spacer()
             NavigationLink (destination: IntroView()){ButtonDone()}
-        }.background(Color("Beige")).navigationBarBackButtonHidden(true)
+        }.background(theme.primary) .navigationBarBackButtonHidden(true)
     }
+    
+    func applySelectedTheme(selectedThemeName: String) {
+        WayPicker.applySelectedTheme(themeName: selectedThemeName)
+    }
+
 }
 
 struct ThemeView_Previews: PreviewProvider {

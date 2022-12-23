@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct Checkmark: View {
+    let theme = ThemeManager.shared.getTheme()
     var body: some View {
         ZStack{
-            Circle().fill((Color("Chocolate")))
+            Circle().fill(theme.checkmark)
                 .frame(width: 55.0, height: 55.0)
             Text("✓").font(.custom("Quicksand",                   size: 30))
-                .foregroundColor(Color("Beige"))
+                .foregroundColor(theme.primary)
         }
         
     }

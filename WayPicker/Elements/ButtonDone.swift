@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct ButtonDone: View {
+    let theme = ThemeManager.shared.getTheme()
     var body: some View {
         ZStack{
                     Rectangle()
-                        .fill(Color("Gray"))
+                .fill(theme.primaryButton)
                         .frame(width: 350.0, height: 100.0)
                     Text("DONE").font(.custom("Quicksand",                   size: 40))
                         .fontWeight(.bold)
-                        .foregroundColor(Color("Beige"))
+                        .foregroundColor(theme.secondaryButton)
                         .kerning(2)
                 }
     }

@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct InfoView: View {
+    let theme = ThemeManager.shared.getTheme()
     var body: some View {
         VStack {
             Menu()
             InfoText()
                 .padding([.leading, .trailing], 20.0).scrollIndicators(.visible)
             NavigationLink (destination: IntroView()){ButtonDone()}
-        }.background(Color("Beige")).navigationBarBackButtonHidden(true)
+        }.background(theme.primary).navigationBarBackButtonHidden(true)
     }
 }
 

@@ -8,15 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
+    @AppStorage("Theme") private var selectedThemeName: String = ThemeName.basic.rawValue
+    
+    init() {
+        self.applySelectedTheme()
+        }
+    let theme = ThemeManager.shared.getTheme()
+    
+    var body: some View {        
         NavigationView{
             IntroView()
         }
     }
+    
+func applySelectedTheme() {
+    WayPicker.applySelectedTheme(themeName: selectedThemeName)
+}
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView()//.preferredColorScheme(.dark)
     }
 }

@@ -8,18 +8,19 @@
 import SwiftUI
 
 struct Logo: View {
+    let theme = ThemeManager.shared.getTheme()
     var body: some View {
         HStack{
             Image("compass")
                 .renderingMode(.template)
                 .resizable()
-                .foregroundColor(Color("Chocolate"))
+                .foregroundColor(theme.logo)
                 .frame(width: 60.0, height: 60.0)
             
             Text("WayPicker")
                 .font(.custom("Pacifico",
                               size: 22))
-            .foregroundColor(Color("Chocolate"))}
+            .foregroundColor(theme.logo)}
     
     }
 }

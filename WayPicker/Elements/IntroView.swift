@@ -8,26 +8,28 @@
 import SwiftUI
 
 struct IntroView: View {
-    var theme: Theme = Theme.light
+    let theme = ThemeManager.shared.getTheme()
+
     
     var body: some View {
         VStack {
             Menu()
             Text("Select your crossroad").font(.custom("Quicksand",                   size: 22))
                 .fontWeight(.semibold)
-                .foregroundColor(Color("Chocolate"))
+                .foregroundColor(theme.text)
                 .padding(.top, 20.0)
             Spacer()
-           TileFrame(theme: theme)
+           TileFrame()
             Spacer()
             NavigationLink(destination: DetailUnknownView()) {
-                Text("Can't find your crossroad?").font(.custom("Quicksand",size: 18)).foregroundColor(Color("Chocolate")).overlay(
+                Text("Can't find your crossroad?").font(.custom("Quicksand",size: 18)).fontWeight(.semibold).foregroundColor(theme.text).overlay(
                     Rectangle()
-                        .foregroundColor(Color("Chocolate")).frame(height: 1).offset(y: 4)
+                        .foregroundColor(theme.text).frame(height: 1).offset(y: 4)
                     , alignment: .bottom)
             }
-        }.background(Color("Beige")).navigationBarBackButtonHidden(true)
+        }.background(theme.primary).navigationBarBackButtonHidden(true)
     }
+
 }
 
 struct IntroView_Previews: PreviewProvider {

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct Menu: View {
+    let theme = ThemeManager.shared.getTheme()
     var body: some View {
         VStack{
             HStack {
@@ -24,7 +25,7 @@ struct Menu: View {
             .padding(.horizontal, 20.0)
             .padding(.bottom, 10.0)
             Divider()
-                .overlay(Color("Chocolate"))
+                .overlay(theme.secondary)
                 .padding(.top, -9.0)
                
         }}

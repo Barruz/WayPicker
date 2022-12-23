@@ -12,7 +12,7 @@ struct DetailView: View {
     var directions: [Direction]
     var directionAmount: Int
     var selectedDirection: Direction
-    var theme: Theme = Theme.light
+    let theme = ThemeManager.shared.getTheme()
 
     
     init(crossroadId: Int, directions: [Direction], directionAmount: Int) {
@@ -49,13 +49,13 @@ struct DetailView: View {
             description = "take the " + turnNumber + " turn on the " + selectedDirection.rawValue
         }
         
-        return Text(description).font(.custom("Quicksand", size: textsize)).fontWeight(.bold).foregroundColor(Color("Chocolate"))
+        return Text(description).font(.custom("Quicksand", size: textsize)).fontWeight(.bold).foregroundColor(theme.secondary)
     }
     
     var body: some View {
         VStack {
             Menu()
-            CrossroadFrame(theme: theme, crossroadId: crossroadId, directions: directions, directionAmount: directionAmount)
+            CrossroadWrapper(crossroadId: crossroadId, directions: directions, directionAmount: directionAmount, staticTheme: nil)
                 .padding(.top, 40.0)
             Spacer()
             DirectionArrow(direction: selectedDirection)
@@ -64,7 +64,7 @@ struct DetailView: View {
                 getDirectionDesc(selectedDirection: selectedDirection, directionAmount: directionAmount).multilineTextAlignment(.center)
             Spacer()
             NavigationLink (destination: IntroView()){ButtonDone()}
-        }.background(Color("Beige")).navigationBarBackButtonHidden(true)
+        }.background(theme.primary).navigationBarBackButtonHidden(true)
     }
 }
 

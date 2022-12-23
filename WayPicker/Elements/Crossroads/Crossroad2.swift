@@ -13,9 +13,9 @@ struct Crossroad2: View {
     
     var body: some View {
         ZStack {
-            Rectangle().foregroundColor(Color(getColor(theme: theme)))
+            Rectangle().foregroundColor(theme.primaryTile)
                 .frame(width:  referenceDimension*0.25, height: referenceDimension*0.8)
-            Rectangle().foregroundColor(Color(getColor(theme: theme)))
+            Rectangle().foregroundColor(theme.primaryTile)
                 .frame(width: referenceDimension*0.8, height: referenceDimension*0.25).offset(y: -referenceDimension*0.28)
         }
     }
@@ -23,6 +23,6 @@ struct Crossroad2: View {
 
 struct Crossroad2_Previews: PreviewProvider {
     static var previews: some View {
-        Crossroad2(referenceDimension: 150.0, theme: Theme.dark)
+        Crossroad2(referenceDimension: 150.0, theme: BasicTheme())
     }
 }

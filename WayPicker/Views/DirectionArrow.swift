@@ -9,16 +9,17 @@ import SwiftUI
 
 struct DirectionArrow: View {
     var direction: Direction;
+    let theme = ThemeManager.shared.getTheme()
 
     var body: some View {
         if (direction == Direction.forward) {
             Image(systemName: "arrow.up")
-                .foregroundColor(Color("Chocolate"))
+                .foregroundColor(theme.secondary)
             .font(.system(size: 60, weight: .bold)) }
         else {
             Image("arrow")
                 .renderingMode(.template)
-                .foregroundColor(Color("Chocolate"))
+                .foregroundColor(theme.secondary)
             .rotationEffect(direction == Direction.left ? Angle(degrees: 180) : Angle(degrees: 0))}
     }
 }

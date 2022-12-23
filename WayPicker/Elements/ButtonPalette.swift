@@ -8,15 +8,16 @@
 import SwiftUI
 
 struct ButtonPalette: View {
+    let theme = ThemeManager.shared.getTheme()
     var body: some View {
         ZStack{
             Circle()
-                .fill(Color("Gray"))
+                .fill(theme.primaryButton)
                 .frame(width: 60.0, height: 60.0)
             Image("palette")
                 .renderingMode(.template)
                 .resizable()
-                .foregroundColor(Color("Beige"))
+                .foregroundColor(theme.secondaryButton)
                 .frame(width: 32.0, height: 32.0)
         }
     }
