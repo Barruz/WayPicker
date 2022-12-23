@@ -11,8 +11,17 @@ struct DetailView: View {
     var crossroadId: Int
     var directions: [Direction]
     var directionAmount: Int
+    var selectedDirection: Direction
     var theme: Theme = Theme.light
-    var selectedDirection: Direction = Direction.left
+
+    
+    init(crossroadId: Int, directions: [Direction], directionAmount: Int) {
+        self.crossroadId = crossroadId
+        self.directions = directions
+        self.directionAmount = directionAmount
+        let randomDirection = directions.randomElement()
+        selectedDirection = randomDirection ?? Direction.left
+        }
     
     func getTurnNumber(directionAmount: Int) -> String {
         let turnNumber: Int = Int.random(in: 1...directionAmount/2)
@@ -24,13 +33,6 @@ struct DetailView: View {
             return String(turnNumber)
         }
     }
-    
-    /*init(crossroadId: Int, directions: [Direction], directionAmount: Int) {
-        self.crossroadId = crossroadId
-        self.directions = directions
-        self.directionAmount = directionAmount
-        self.selectedDirection = directions.randomElement() ?? Direction.left
-        }*/
     
     func getDirectionDesc(selectedDirection: Direction, directionAmount: Int) -> Text {
         
@@ -68,6 +70,6 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView(crossroadId: 5, directions: [Direction.left, Direction.right], directionAmount: 4)
+        DetailView(crossroadId: 1, directions: [Direction.left, Direction.right, Direction.forward], directionAmount: 3)
     }
 }
