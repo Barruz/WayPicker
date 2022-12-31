@@ -13,7 +13,6 @@ struct IntroView: View {
     
     var body: some View {
         VStack {
-            Menu()
             Text("Select your crossroad").font(.custom("Quicksand",                   size: 22))
                 .fontWeight(.semibold)
                 .foregroundColor(theme.text)
@@ -27,7 +26,7 @@ struct IntroView: View {
                         .foregroundColor(theme.text).frame(height: 1).offset(y: 4)
                     , alignment: .bottom)
             }
-        }.background(theme.primary).navigationBarBackButtonHidden(true)
+        }.background(theme.primary).navigationBarBackButtonHidden(true).toolbar {Menu()}
     }
 
 }

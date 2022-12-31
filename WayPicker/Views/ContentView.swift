@@ -16,7 +16,7 @@ struct ContentView: View {
     let theme = ThemeManager.shared.getTheme()
     
     var body: some View {        
-        NavigationView{
+        NavigationStack{
             IntroView()
         }
     }

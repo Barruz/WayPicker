@@ -14,7 +14,6 @@ struct ThemeView: View {
 
     var body: some View {
         VStack {
-            Menu()
             Spacer()
             Button {
                 applySelectedTheme(selectedThemeName: ThemeName.basic.rawValue)
@@ -47,7 +46,7 @@ struct ThemeView: View {
                 }}
             Spacer()
             NavigationLink (destination: IntroView()){ButtonDone()}
-        }.background(theme.primary) .navigationBarBackButtonHidden(true)
+        }.background(theme.primary) .navigationBarBackButtonHidden(true).toolbar {Menu()}
     }
     
     func applySelectedTheme(selectedThemeName: String) {

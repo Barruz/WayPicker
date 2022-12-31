@@ -13,7 +13,6 @@ struct DetailUnknownView: View {
 
     var body: some View {
             VStack {
-                Menu()
                 Text("Can’t find your your crossroad?").font(.custom("Quicksand",size: 22)).fontWeight(.semibold).foregroundColor(theme.text).padding(.all, 30.0)
                 Text("So sorry to hear that! Please take the first turn on the").font(.custom("Quicksand",size: 22)).fontWeight(.semibold).foregroundColor(theme.text).multilineTextAlignment(.center).padding(.horizontal, 30.0).padding(.bottom, 70.0)
                 DirectionArrow(direction: selectedDirection)
@@ -24,7 +23,7 @@ struct DetailUnknownView: View {
                 NavigationLink (destination: IntroView()) {
                     ButtonDone()
                 }
-            }.background(theme.primary).navigationBarBackButtonHidden(true)
+            }.background(theme.primary).navigationBarBackButtonHidden(true).toolbar {Menu()}
         }
 }
 

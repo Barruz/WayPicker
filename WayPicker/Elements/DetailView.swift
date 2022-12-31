@@ -54,7 +54,6 @@ struct DetailView: View {
     
     var body: some View {
         VStack {
-            Menu()
             CrossroadWrapper(crossroadId: crossroadId, directions: directions, directionAmount: directionAmount, staticTheme: nil)
                 .padding(.top, 40.0)
             Spacer()
@@ -64,7 +63,7 @@ struct DetailView: View {
                 getDirectionDesc(selectedDirection: selectedDirection, directionAmount: directionAmount).multilineTextAlignment(.center)
             Spacer()
             NavigationLink (destination: IntroView()){ButtonDone()}
-        }.background(theme.primary).navigationBarBackButtonHidden(true)
+        }.background(theme.primary).navigationBarBackButtonHidden(true).toolbar {Menu()}
     }
 }
 
