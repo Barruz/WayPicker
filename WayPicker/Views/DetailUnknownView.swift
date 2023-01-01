@@ -23,7 +23,7 @@ struct DetailUnknownView: View {
                 NavigationLink (destination: IntroView()) {
                     ButtonDone()
                 }
-            }.background(theme.primary).navigationBarBackButtonHidden(true).toolbar {Menu()}
+            }.padding(.top, 20.0).background(theme.primary).navigationBarBackButtonHidden(true).toolbar {Menu()}
         }
 }
 

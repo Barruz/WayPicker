@@ -26,7 +26,7 @@ struct IntroView: View {
                         .foregroundColor(theme.text).frame(height: 1).offset(y: 4)
                     , alignment: .bottom)
             }
-        }.background(theme.primary).navigationBarBackButtonHidden(true).toolbar {Menu()}
+        }.padding(.top, 20.0).background(theme.primary).navigationBarBackButtonHidden(true).toolbar {Menu()}
     }
 
 }

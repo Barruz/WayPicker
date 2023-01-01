@@ -10,25 +10,21 @@ import SwiftUI
 struct Menu: View {
     let theme = ThemeManager.shared.getTheme()
     var body: some View {
-        VStack{
-            HStack {
-                NavigationLink (destination: IntroView())
-                {Logo()}
+        
+        HStack {
+            NavigationLink (destination: IntroView())            {Logo()}
+            Spacer()
+                .frame(width: 100.0)
+            HStack{
+                NavigationLink (destination: ThemeView()){ButtonPalette()}
                 Spacer()
-                HStack{
-                    NavigationLink (destination: ThemeView()){ButtonPalette()}
-                    Spacer()
-                        .frame(width: 15.0)
-                    NavigationLink (destination: InfoView()){ButtonInfo()}
-                }
+                    .frame(width: 15.0)
+                NavigationLink (destination: InfoView()){ButtonInfo()}
             }
-            .padding(.horizontal, 20.0)
-            .padding(.bottom, 10.0)
-            Divider()
-                .overlay(theme.secondary)
-                .padding(.top, -9.0)
-               
-        }}
+        }
+
+        
+    }
 }
 
 struct Menu_Previews: PreviewProvider {

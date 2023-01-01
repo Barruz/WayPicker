@@ -15,11 +15,11 @@ struct Logo: View {
                 .renderingMode(.template)
                 .resizable()
                 .foregroundColor(theme.logo)
-                .frame(width: 60.0, height: 60.0)
+                .frame(width: 45.0, height: 45.0)
             
             Text("WayPicker")
                 .font(.custom("Pacifico",
-                              size: 22))
+                              size: 20))
             .foregroundColor(theme.logo)}
     
     }

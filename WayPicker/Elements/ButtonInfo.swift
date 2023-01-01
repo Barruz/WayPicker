@@ -13,10 +13,10 @@ struct ButtonInfo: View {
         ZStack{
             Circle()
                 .fill(theme.primaryButton)
-                .frame(width: 60.0, height: 60.0)
+                .frame(width: 43.0, height: 43.0)
             Text("i")
                 .font(.custom("Pacifico",
-                              size: 38))
+                              size: 30))
                 .foregroundColor(theme.secondaryButton)
             .padding(.bottom, 5.0)}
     }
