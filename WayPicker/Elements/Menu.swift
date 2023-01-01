@@ -21,7 +21,7 @@ struct Menu: View {
                     .frame(width: 15.0)
                 NavigationLink (destination: InfoView()){ButtonInfo()}
             }
-        }
+        }.background(theme.primary)
 
         
     }

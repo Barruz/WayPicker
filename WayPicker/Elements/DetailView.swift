@@ -63,7 +63,7 @@ struct DetailView: View {
                 getDirectionDesc(selectedDirection: selectedDirection, directionAmount: directionAmount).multilineTextAlignment(.center)
             Spacer()
             NavigationLink (destination: IntroView()){ButtonDone()}
-        }.background(theme.primary).navigationBarBackButtonHidden(true).toolbar {Menu()}
+        }.navigationBarBackButtonHidden(true).toolbar {Menu()}.frame(maxWidth: .infinity).background(theme.primary)
     }
 }
 

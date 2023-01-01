@@ -14,7 +14,7 @@ struct InfoView: View {
             InfoText()
                 .padding([.leading, .trailing], 20.0).scrollIndicators(.visible)
             NavigationLink (destination: IntroView()){ButtonDone()}
-        }.padding(.top, 20.0).background(theme.primary).navigationBarBackButtonHidden(true).toolbar {Menu()}
+        }.padding(.top, 20.0).navigationBarBackButtonHidden(true).toolbar {Menu()}.frame(maxWidth: .infinity).background(theme.primary)
     }
 }
 

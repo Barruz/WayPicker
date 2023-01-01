@@ -46,7 +46,7 @@ struct ThemeView: View {
                 }}
             Spacer()
             NavigationLink (destination: IntroView()){ButtonDone()}
-        }.background(theme.primary) .navigationBarBackButtonHidden(true).toolbar {Menu()}
+        } .navigationBarBackButtonHidden(true).toolbar {Menu()}.frame(maxWidth: .infinity).background(theme.primary)
     }
     
     func applySelectedTheme(selectedThemeName: String) {
