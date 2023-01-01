@@ -54,8 +54,10 @@ struct DetailView: View {
     
     var body: some View {
         VStack {
-            CrossroadWrapper(crossroadId: crossroadId, directions: directions, staticTheme: nil)
-                .padding(.top, 40.0)
+            ZStack{
+                CrossroadWrapper(crossroadId: crossroadId, directions: directions, staticTheme: nil)
+                //DirectionArrowSmall()
+            }.padding(.top, 40.0)
             Spacer()
             DirectionArrow(direction: selectedDirection)
             Spacer()

@@ -40,6 +40,7 @@
 		4544A4D7295884F0004EB8E8 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544A4D6295884F0004EB8E8 /* Utils.swift */; };
 		4544A4DB29588D1D004EB8E8 /* ThemeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544A4DA29588D1D004EB8E8 /* ThemeList.swift */; };
 		456090DD295DCFE9009D6DFA /* CrossroadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456090DC295DCFE9009D6DFA /* CrossroadButton.swift */; };
+		45A899922961C63400D6B165 /* DirectionArrowSmall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A899912961C63400D6B165 /* DirectionArrowSmall.swift */; };
 		45BDF690295DFD7A003E8D2E /* CrossroadWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BDF68F295DFD7A003E8D2E /* CrossroadWrapper.swift */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +80,7 @@
 		4544A4D6295884F0004EB8E8 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		4544A4DA29588D1D004EB8E8 /* ThemeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeList.swift; sourceTree = "<group>"; };
 		456090DC295DCFE9009D6DFA /* CrossroadButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossroadButton.swift; sourceTree = "<group>"; };
+		45A899912961C63400D6B165 /* DirectionArrowSmall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionArrowSmall.swift; sourceTree = "<group>"; };
 		45BDF68F295DFD7A003E8D2E /* CrossroadWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossroadWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				4544A4B82954C359004EB8E8 /* DirectionArrow.swift */,
+				45A899912961C63400D6B165 /* DirectionArrowSmall.swift */,
 				4544A4BA2954C38D004EB8E8 /* TileFrame.swift */,
 				4544A49E2954C17A004EB8E8 /* Checkmark.swift */,
 				4544A4A02954C1B2004EB8E8 /* ButtonPalette.swift */,
@@ -284,6 +287,7 @@
 				4544A4C82954C484004EB8E8 /* Crossroad6.swift in Sources */,
 				4544A4CA2954C53A004EB8E8 /* DetailUnknownView.swift in Sources */,
 				4544A4AF2954C286004EB8E8 /* InfoView.swift in Sources */,
+				45A899922961C63400D6B165 /* DirectionArrowSmall.swift in Sources */,
 				4544A4B12954C2B8004EB8E8 /* InfoText.swift in Sources */,
 				4544A4D129588070004EB8E8 /* ThemeManager.swift in Sources */,
 				4544A4852954BCD3004EB8E8 /* WayPickerApp.swift in Sources */,
