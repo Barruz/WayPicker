@@ -10,7 +10,6 @@ import SwiftUI
 struct CrossroadFrame: View {
     var crossroadId: Int
     var directions: [Direction]
-    var directionAmount: Int
     var theme: Theme
 
     func selectCrossroad(id: Int, referenceDimension: CGFloat, theme: Theme) -> AnyView {
@@ -49,6 +48,6 @@ struct CrossroadFrame: View {
     
     struct CrossroadFrame_Previews: PreviewProvider {
         static var previews: some View {
-            CrossroadFrame(crossroadId: 2, directions:  [Direction.left, Direction.forward, Direction.right], directionAmount: 3, theme: BasicTheme())
+            CrossroadFrame(crossroadId: 2, directions:  [Direction.left, Direction.forward, Direction.right], theme: BasicTheme())
         }
     }

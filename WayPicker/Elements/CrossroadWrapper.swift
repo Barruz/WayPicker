@@ -17,11 +17,11 @@ struct CrossroadWrapper: View {
     var theme: Theme = ThemeManager.shared.getTheme()
     var isSketchesTheme: Bool = false
     
-    init(crossroadId: Int, directions: [Direction], directionAmount: Int, staticTheme: ThemeName?) {
+    init(crossroadId: Int, directions: [Direction], staticTheme: ThemeName?) {
         self.crossroadId = crossroadId
         self.directions = directions
-        self.directionAmount = directionAmount
         self.staticTheme = staticTheme
+        directionAmount = directions.count
         
         if (staticTheme != nil) {
             theme = getStaticTheme(staticTheme: staticTheme!)
@@ -49,12 +49,12 @@ struct CrossroadWrapper: View {
             Image("sketch" + String(crossroadId))
                 .frame(width: 150.0, height: 150.0)
         } else {
-            CrossroadFrame(crossroadId: crossroadId, directions: directions, directionAmount: directionAmount, theme: theme)
+            CrossroadFrame(crossroadId: crossroadId, directions: directions, theme: theme)
         }}
 }
 
 struct CrossroadWrapper_Previews: PreviewProvider {
     static var previews: some View {
-        CrossroadWrapper(crossroadId: 4, directions: [Direction.left, Direction.forward], directionAmount: 2, staticTheme: ThemeName.sketches)
+        CrossroadWrapper(crossroadId: 4, directions: [Direction.left, Direction.forward], staticTheme: ThemeName.sketches)
     }
 }

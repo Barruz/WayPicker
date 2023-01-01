@@ -19,7 +19,7 @@ struct ThemeView: View {
                 applySelectedTheme(selectedThemeName: ThemeName.basic.rawValue)
             } label: {
                 ZStack{
-                    CrossroadWrapper( crossroadId: 1, directions: [Direction.left, Direction.right, Direction.forward], directionAmount: 3, staticTheme: ThemeName.basic)
+                    CrossroadWrapper( crossroadId: 1, directions: [Direction.left, Direction.right, Direction.forward], staticTheme: ThemeName.basic)
                         .padding(.bottom, 10.0)
                     Checkmark().offset(x: 70, y: -70).opacity(ThemeName.basic.rawValue == selectedTheme ? 1 : 0)
                 }}
@@ -27,7 +27,7 @@ struct ThemeView: View {
                 applySelectedTheme(selectedThemeName: ThemeName.roadsigns.rawValue)
             } label: {
                 ZStack{
-                    CrossroadWrapper( crossroadId: 1, directions: [Direction.left, Direction.right, Direction.forward], directionAmount: 3, staticTheme: ThemeName.roadsigns).padding(.bottom, 10.0)
+                    CrossroadWrapper( crossroadId: 1, directions: [Direction.left, Direction.right, Direction.forward], staticTheme: ThemeName.roadsigns).padding(.bottom, 10.0)
                     Checkmark().offset(x: 70, y: -70).opacity(ThemeName.roadsigns.rawValue == selectedTheme ? 1 : 0)
                 }}
             Button {
@@ -38,7 +38,7 @@ struct ThemeView: View {
                         .fill(theme.primary)
                         .border(.gray)
                         .frame(width: 150.0, height: 150.0)
-                    CrossroadWrapper( crossroadId: 1, directions: [Direction.left, Direction.right, Direction.forward], directionAmount: 3, staticTheme: ThemeName.sketches)
+                    CrossroadWrapper( crossroadId: 1, directions: [Direction.left, Direction.right, Direction.forward], staticTheme: ThemeName.sketches)
                     Rectangle()
                         .stroke(theme.primary, lineWidth: 10.0)
                         .frame(width: 160.0, height: 160.0)

@@ -17,7 +17,6 @@ enum Direction: String {
 struct Crossroad: Hashable {
     var crossroadId: Int
     var directions: [Direction]
-    var directionAmount: Int
 }
 
 enum ThemeName: String {

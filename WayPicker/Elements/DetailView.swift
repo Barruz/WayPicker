@@ -15,10 +15,10 @@ struct DetailView: View {
     let theme = ThemeManager.shared.getTheme()
 
     
-    init(crossroadId: Int, directions: [Direction], directionAmount: Int) {
+    init(crossroadId: Int, directions: [Direction]) {
         self.crossroadId = crossroadId
         self.directions = directions
-        self.directionAmount = directionAmount
+        directionAmount = directions.count
         let randomDirection = directions.randomElement()
         selectedDirection = randomDirection ?? Direction.left
         }
@@ -54,7 +54,7 @@ struct DetailView: View {
     
     var body: some View {
         VStack {
-            CrossroadWrapper(crossroadId: crossroadId, directions: directions, directionAmount: directionAmount, staticTheme: nil)
+            CrossroadWrapper(crossroadId: crossroadId, directions: directions, staticTheme: nil)
                 .padding(.top, 40.0)
             Spacer()
             DirectionArrow(direction: selectedDirection)
@@ -69,6 +69,6 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView(crossroadId: 1, directions: [Direction.left, Direction.right, Direction.forward], directionAmount: 3)
+        DetailView(crossroadId: 1, directions: [Direction.left, Direction.right, Direction.forward])
     }
 }
