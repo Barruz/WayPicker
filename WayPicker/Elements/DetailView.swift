@@ -12,6 +12,7 @@ struct DetailView: View {
     var directions: [Direction]
     var directionAmount: Int
     var selectedDirection: Direction
+    var turnNumber: String = "first"
     let theme = ThemeManager.shared.getTheme()
 
     
@@ -21,20 +22,14 @@ struct DetailView: View {
         directionAmount = directions.count
         let randomDirection = directions.randomElement()
         selectedDirection = randomDirection ?? Direction.left
+        turnNumber = getTurnNumber(directionAmount: directionAmount)
         }
     
     func getTurnNumber(directionAmount: Int) -> String {
-        let turnNumber: Int = Int.random(in: 1...directionAmount/2)
-        if (turnNumber == 1) {
-            return "first"
-        } else if (turnNumber == 2) {
-            return "second"
-        } else {
-            return String(turnNumber)
-        }
+        return ["first", "second"].randomElement()!
     }
     
-    func getDirectionDesc(selectedDirection: Direction, directionAmount: Int) -> Text {
+    func getDirectionDesc(selectedDirection: Direction, directionAmount: Int, turnNumber: String) -> Text {
         
         var textsize: CGFloat = 60
         var description: String = "go " + selectedDirection.rawValue
@@ -45,7 +40,6 @@ struct DetailView: View {
         
         if (directionAmount > 3) {
             textsize = 40
-            let turnNumber = getTurnNumber(directionAmount: directionAmount)
             description = "take the " + turnNumber + " turn on the " + selectedDirection.rawValue
         }
         
@@ -56,13 +50,13 @@ struct DetailView: View {
         VStack {
             ZStack{
                 CrossroadWrapper(crossroadId: crossroadId, directions: directions, staticTheme: nil)
-                //DirectionArrowSmall()
+                DirectionArrowSmall(crossroadId: crossroadId, direction: selectedDirection, turnNumber: turnNumber)
             }.padding(.top, 40.0)
             Spacer()
             DirectionArrow(direction: selectedDirection)
             Spacer()
                 .frame(height: 55.0)
-                getDirectionDesc(selectedDirection: selectedDirection, directionAmount: directionAmount).multilineTextAlignment(.center)
+            getDirectionDesc(selectedDirection: selectedDirection, directionAmount: crossroadId == 5 ? 4 : directionAmount, turnNumber: turnNumber).multilineTextAlignment(.center)
             Spacer()
             NavigationLink (destination: IntroView()){ButtonDone()}
         }.navigationBarBackButtonHidden(true).toolbar {Menu()}.frame(maxWidth: .infinity).background(theme.primary)
