@@ -44,7 +44,7 @@ final class SketchesTheme: Theme {
     var primaryButton = Color("SketchesPrimaryButton")
     var secondaryButton = Color("SketchesSecondaryButton")
     var primaryTile = Color("SketchesPrimary")
-    var secondaryTile = Color("SketchesSecondary")
+    var secondaryTile = Color("SketchesSecondaryTile")
     var borderTile = Color("SketchesSecondary")
     var logo = Color("SketchesLogo")
     var locationPointer: Color = Color("SketchesLocationPointer")

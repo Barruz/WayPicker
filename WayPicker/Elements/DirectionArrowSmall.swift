@@ -8,11 +8,17 @@
 import SwiftUI
 
 struct DirectionArrowSmall: View {
+    @AppStorage("Theme") private var selectedThemeName: String = ThemeName.basic.rawValue
     var crossroadId: Int
     var direction: Direction
     var turnNumber: String
     let theme = ThemeManager.shared.getTheme()
-    @AppStorage("Theme") private var selectedThemeName: String = ThemeName.basic.rawValue
+
+    var body: some View {
+        Image(getArrow(crossroadId: crossroadId, direction: direction, turnNumber: turnNumber, themeName: selectedThemeName))
+                .renderingMode(.template)
+                .foregroundColor( theme.secondaryTile)
+    }
     
     func getArrow(crossroadId: Int, direction: Direction, turnNumber: String, themeName: String) -> String {
         var arrowDirection: String = "left"
@@ -21,8 +27,6 @@ struct DirectionArrowSmall: View {
         if (direction == Direction.right) {
             arrowDirection = "right"
         }
-        
-        
         
         if (themeName == ThemeName.sketches.rawValue) {
             var arrowDescription = "arrow-sketches-" + String(crossroadId)
@@ -35,7 +39,6 @@ struct DirectionArrowSmall: View {
                 arrowDescription = arrowDescription + "-" + arrowDirection
             }
             return arrowDescription
-
         } else {
             var arrowLength: String = "short"
 
@@ -60,13 +63,6 @@ struct DirectionArrowSmall: View {
         }
         
         
-    }
-
-    
-    var body: some View {
-        Image(getArrow(crossroadId: crossroadId, direction: direction, turnNumber: turnNumber, themeName: selectedThemeName))
-                .renderingMode(.template)
-                .foregroundColor(selectedThemeName == "sketches" ? theme.accent : theme.secondaryTile)
     }
 }
 

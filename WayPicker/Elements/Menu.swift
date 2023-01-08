@@ -12,16 +12,17 @@ struct Menu: View {
     var body: some View {
         
         HStack {
-            NavigationLink (destination: IntroView())            {Logo()}
+            NavigationLink (destination: IntroView())            {Logo().padding(.leading, 20.0)}
             Spacer()
-                .frame(width: 100.0)
+                .frame(width: 90.0)
             HStack{
                 NavigationLink (destination: ThemeView()){ButtonPalette()}
                 Spacer()
-                    .frame(width: 15.0)
-                NavigationLink (destination: InfoView()){ButtonInfo()}
+                    .frame(width: 8.0)
+                NavigationLink (destination: InfoView()){ButtonInfo()
+                    .padding(.trailing, 20.0)}
             }
-        }.background(theme.primary)
+        }
 
         
     }

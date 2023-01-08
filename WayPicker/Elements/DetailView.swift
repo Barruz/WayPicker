@@ -12,21 +12,31 @@ struct DetailView: View {
     var directions: [Direction]
     var directionAmount: Int
     var selectedDirection: Direction
-    var turnNumber: String = "first"
+    var turnNumber: String = ["first", "second"].randomElement()!
     let theme = ThemeManager.shared.getTheme()
 
-    
     init(crossroadId: Int, directions: [Direction]) {
         self.crossroadId = crossroadId
         self.directions = directions
         directionAmount = directions.count
         let randomDirection = directions.randomElement()
         selectedDirection = randomDirection ?? Direction.left
-        turnNumber = getTurnNumber(directionAmount: directionAmount)
-        }
+    }
     
-    func getTurnNumber(directionAmount: Int) -> String {
-        return ["first", "second"].randomElement()!
+    var body: some View {
+        VStack {
+            ZStack{
+                CrossroadWrapper(crossroadId: crossroadId, directions: directions, staticTheme: nil)
+                DirectionArrowSmall(crossroadId: crossroadId, direction: selectedDirection, turnNumber: turnNumber)
+            }.padding(.top, 40.0)
+            Spacer()
+            DirectionArrow(direction: selectedDirection)
+            Spacer()
+                .frame(height: 55.0)
+            getDirectionDesc(selectedDirection: selectedDirection, directionAmount: crossroadId == 5 ? 4 : directionAmount, turnNumber: turnNumber).multilineTextAlignment(.center)
+            Spacer()
+            NavigationLink (destination: IntroView()){ButtonDone()}
+        }.navigationBarBackButtonHidden(true).toolbar {Menu()}.frame(maxWidth: .infinity).background(theme.primary)
     }
     
     func getDirectionDesc(selectedDirection: Direction, directionAmount: Int, turnNumber: String) -> Text {
@@ -44,22 +54,6 @@ struct DetailView: View {
         }
         
         return Text(description).font(.custom("Quicksand", size: textsize)).fontWeight(.bold).foregroundColor(theme.secondary)
-    }
-    
-    var body: some View {
-        VStack {
-            ZStack{
-                CrossroadWrapper(crossroadId: crossroadId, directions: directions, staticTheme: nil)
-                DirectionArrowSmall(crossroadId: crossroadId, direction: selectedDirection, turnNumber: turnNumber)
-            }.padding(.top, 40.0)
-            Spacer()
-            DirectionArrow(direction: selectedDirection)
-            Spacer()
-                .frame(height: 55.0)
-            getDirectionDesc(selectedDirection: selectedDirection, directionAmount: crossroadId == 5 ? 4 : directionAmount, turnNumber: turnNumber).multilineTextAlignment(.center)
-            Spacer()
-            NavigationLink (destination: IntroView()){ButtonDone()}
-        }.navigationBarBackButtonHidden(true).toolbar {Menu()}.frame(maxWidth: .infinity).background(theme.primary)
     }
 }
 

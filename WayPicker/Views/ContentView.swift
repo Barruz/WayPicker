@@ -9,11 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     @AppStorage("Theme") private var selectedThemeName: String = ThemeName.basic.rawValue
+    let theme = ThemeManager.shared.getTheme()
     
     init() {
         self.applySelectedTheme()
         }
-    let theme = ThemeManager.shared.getTheme()
     
     var body: some View {        
         NavigationStack{
@@ -21,13 +21,13 @@ struct ContentView: View {
         }
     }
     
-func applySelectedTheme() {
-    WayPicker.applySelectedTheme(themeName: selectedThemeName)
-}
+    func applySelectedTheme() {
+        WayPicker.applySelectedTheme(themeName: selectedThemeName)
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()//.preferredColorScheme(.dark)
+        ContentView()
     }
 }

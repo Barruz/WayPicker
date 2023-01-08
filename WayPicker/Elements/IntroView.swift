@@ -18,7 +18,7 @@ struct IntroView: View {
                 .foregroundColor(theme.text)
                 .padding(.top, 20.0)
             Spacer()
-           TileFrame()
+            TileFrame()
             Spacer()
             NavigationLink(destination: DetailUnknownView()) {
                 Text("Can't find your crossroad?").font(.custom("Quicksand",size: 18)).fontWeight(.semibold).foregroundColor(theme.text).overlay(
