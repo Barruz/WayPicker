@@ -55,6 +55,6 @@ struct CrossroadWrapper: View {
 
 struct CrossroadWrapper_Previews: PreviewProvider {
     static var previews: some View {
-        CrossroadWrapper(crossroadId: 4, directions: [Direction.left, Direction.forward], staticTheme: ThemeName.sketches)
+        CrossroadWrapper(crossroadId: 1, directions: [Direction.left, Direction.forward], staticTheme: ThemeName.sketches)
     }
 }

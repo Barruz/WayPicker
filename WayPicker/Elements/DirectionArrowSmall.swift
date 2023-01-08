@@ -12,41 +12,61 @@ struct DirectionArrowSmall: View {
     var direction: Direction
     var turnNumber: String
     let theme = ThemeManager.shared.getTheme()
+    @AppStorage("Theme") private var selectedThemeName: String = ThemeName.basic.rawValue
     
-    func getArrow(crossroadId: Int, direction: Direction) -> String {
-        var arrowLength: String = "short"
+    func getArrow(crossroadId: Int, direction: Direction, turnNumber: String, themeName: String) -> String {
         var arrowDirection: String = "left"
         var arrowSecondDirection: String = "-"
-        
-        if (crossroadId == 2) {
-            arrowLength = "long"
-        }
         
         if (direction == Direction.right) {
             arrowDirection = "right"
         }
         
-        if (direction == Direction.forward) {
-            arrowDirection = "straight"
+        
+        
+        if (themeName == ThemeName.sketches.rawValue) {
+            var arrowDescription = "arrow-sketches-" + String(crossroadId)
+            
+            if (direction == Direction.forward) {
+               arrowDescription = arrowDescription + "-straight"
+            } else if (crossroadId == 5 && turnNumber == "second") {
+                arrowDescription = arrowDescription + "-" + arrowDirection + "-up"
+            } else {
+                arrowDescription = arrowDescription + "-" + arrowDirection
+            }
+            return arrowDescription
+
+        } else {
+            var arrowLength: String = "short"
+
+            if (crossroadId == 2) {
+                arrowLength = "long"
+            }
+            
+            if (direction == Direction.forward) {
+                arrowDirection = "straight"
+            }
+            
+            if (crossroadId == 6) {
+                arrowSecondDirection = "-up-"
+            }
+            
+            if (crossroadId == 5) {
+                if (turnNumber == "first") {
+                    arrowSecondDirection = "-down-"} else {arrowSecondDirection = "-up-"}
+            }
+            
+            return "arrow-" + arrowLength + arrowSecondDirection + arrowDirection
         }
         
-        if (crossroadId == 6) {
-            arrowSecondDirection = "-up-"
-        }
         
-        if (crossroadId == 5) {
-            if (turnNumber == "first") {
-                arrowSecondDirection = "-down-"} else {arrowSecondDirection = "-up-"}
-        }
-        
-        return "arrow-" + arrowLength + arrowSecondDirection + arrowDirection
     }
 
     
     var body: some View {
-            Image(getArrow(crossroadId: crossroadId, direction: direction))
+        Image(getArrow(crossroadId: crossroadId, direction: direction, turnNumber: turnNumber, themeName: selectedThemeName))
                 .renderingMode(.template)
-                .foregroundColor(theme.secondaryTile)
+                .foregroundColor(selectedThemeName == "sketches" ? theme.accent : theme.secondaryTile)
     }
 }
 
