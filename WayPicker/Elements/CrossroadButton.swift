@@ -14,7 +14,7 @@ struct CrossroadButton: View {
     var body: some View {
         NavigationLink (destination: DetailView(crossroadId: crossroadId, directions: directions)){
             CrossroadWrapper(crossroadId: crossroadId, directions: directions, staticTheme: nil)
-        }
+                }
     }
 }
 

@@ -24,6 +24,7 @@ struct ContentView: View {
     func applySelectedTheme() {
         WayPicker.applySelectedTheme(themeName: selectedThemeName)
     }
+
     }
 
 struct ContentView_Previews: PreviewProvider {
