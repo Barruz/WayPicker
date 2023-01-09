@@ -13,8 +13,7 @@ struct Menu: View {
         
         HStack {
             NavigationLink (destination: IntroView())            {Logo().padding(.leading, 15.0)}
-            Spacer()
-                .frame(width: 90.0)
+            Spacer().frame(width: 80.0)
             HStack{
                 NavigationLink (destination: ThemeView()){ButtonPalette()}
                 Spacer()
