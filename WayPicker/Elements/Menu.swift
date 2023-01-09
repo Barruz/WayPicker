@@ -12,7 +12,7 @@ struct Menu: View {
     var body: some View {
         
         HStack {
-            NavigationLink (destination: IntroView())            {Logo().padding(.leading, 20.0)}
+            NavigationLink (destination: IntroView())            {Logo().padding(.leading, 15.0)}
             Spacer()
                 .frame(width: 90.0)
             HStack{
@@ -20,7 +20,7 @@ struct Menu: View {
                 Spacer()
                     .frame(width: 8.0)
                 NavigationLink (destination: InfoView()){ButtonInfo()
-                    .padding(.trailing, 20.0)}
+                    .padding(.trailing, 15.0)}
             }
         }
 

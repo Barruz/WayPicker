@@ -28,32 +28,29 @@ struct DetailView: View {
             ZStack{
                 CrossroadWrapper(crossroadId: crossroadId, directions: directions, staticTheme: nil)
                 DirectionArrowSmall(crossroadId: crossroadId, direction: selectedDirection, turnNumber: turnNumber)
-            }.padding(.top, 40.0)
+            }.padding(.top, 80.0)
             Spacer()
             DirectionArrow(direction: selectedDirection)
             Spacer()
-                .frame(height: 55.0)
-            getDirectionDesc(selectedDirection: selectedDirection, directionAmount: crossroadId == 5 ? 4 : directionAmount, turnNumber: turnNumber).multilineTextAlignment(.center)
+                .frame(height: 100.0)
+            getDirectionDesc(selectedDirection: selectedDirection, directionAmount: crossroadId == 5 ? 4 : directionAmount, turnNumber: turnNumber).multilineTextAlignment(.center).padding(.horizontal, 20.0)
             Spacer()
             NavigationLink (destination: IntroView()){ButtonDone()}
         }.navigationBarBackButtonHidden(true).toolbar {Menu()}.frame(maxWidth: .infinity).background(theme.primary)
     }
     
     func getDirectionDesc(selectedDirection: Direction, directionAmount: Int, turnNumber: String) -> Text {
-        
-        var textsize: CGFloat = 60
+    
         var description: String = "go " + selectedDirection.rawValue
         
         if (selectedDirection == Direction.forward) {
-            textsize = 40
         }
         
         if (directionAmount > 3) {
-            textsize = 40
             description = "take the " + turnNumber + " turn on the " + selectedDirection.rawValue
         }
         
-        return Text(description).font(.custom("Quicksand", size: textsize)).fontWeight(.bold).foregroundColor(theme.secondary)
+        return Text(description).font(.custom("Quicksand", size: 40)).fontWeight(.bold).foregroundColor(theme.secondary)
     }
 }
 

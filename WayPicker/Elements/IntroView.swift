@@ -21,9 +21,9 @@ struct IntroView: View {
             TileFrame()
             Spacer()
             NavigationLink(destination: DetailUnknownView()) {
-                Text("Can't find your crossroad?").font(.custom("Quicksand",size: 18)).fontWeight(.semibold).foregroundColor(theme.text).overlay(
+                Text("Can't find your crossroad?").font(.custom("Quicksand",size: 18)).fontWeight(.semibold).foregroundColor(theme.text).padding(.bottom, 20.0).overlay(
                     Rectangle()
-                        .foregroundColor(theme.text).frame(height: 1).offset(y: 4)
+                        .foregroundColor(theme.text).frame(height: 1).offset(y: -15)
                     , alignment: .bottom)
             }
         }.padding(.top, 20.0).navigationBarBackButtonHidden(true).toolbar {Menu()}.frame(maxWidth: .infinity).background(theme.primary)

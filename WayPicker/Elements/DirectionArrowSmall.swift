@@ -15,10 +15,13 @@ struct DirectionArrowSmall: View {
     let theme = ThemeManager.shared.getTheme()
 
     var body: some View {
-        Image(getArrow(crossroadId: crossroadId, direction: direction, turnNumber: turnNumber, themeName: selectedThemeName))
+        ZStack{
+            Image(getArrow(crossroadId: crossroadId, direction: direction, turnNumber: turnNumber, themeName: selectedThemeName))
                 .renderingMode(.template)
                 .foregroundColor( theme.secondaryTile)
-    }
+            if (selectedThemeName != ThemeName.sketches.rawValue) {
+                LocationPointer(theme: theme).frame(width: 150*0.18, height: 150*0.18).offset(y: 150*0.28)
+            }}}
     
     func getArrow(crossroadId: Int, direction: Direction, turnNumber: String, themeName: String) -> String {
         var arrowDirection: String = "left"

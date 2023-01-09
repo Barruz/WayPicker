@@ -40,8 +40,8 @@ struct ThemeView: View {
                         .frame(width: 150.0, height: 150.0)
                     CrossroadWrapper( crossroadId: 1, directions: [Direction.left, Direction.right, Direction.forward], staticTheme: ThemeName.sketches)
                     Rectangle()
-                        .stroke(theme.primary, lineWidth: 10.0)
-                        .frame(width: 160.0, height: 160.0)
+                        .stroke(theme.primary, lineWidth: 17.0)
+                        .frame(width: 166.0, height: 166.0)
                     Checkmark().offset(x: 70, y: -70).opacity(ThemeName.sketches.rawValue == selectedTheme ? 1 : 0)
                 }}
             Spacer()

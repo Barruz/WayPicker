@@ -13,12 +13,12 @@ struct DetailUnknownView: View {
 
     var body: some View {
             VStack {
-                Text("Can’t find your your crossroad?").font(.custom("Quicksand",size: 22)).fontWeight(.semibold).foregroundColor(theme.text).padding(.all, 30.0)
-                Text("So sorry to hear that! Please take the first turn on the").font(.custom("Quicksand",size: 22)).fontWeight(.semibold).foregroundColor(theme.text).multilineTextAlignment(.center).padding(.horizontal, 30.0).padding(.bottom, 70.0)
+                Text("Can’t find your your crossroad?").font(.custom("Quicksand",size: 22)).fontWeight(.semibold).foregroundColor(theme.text).padding(.all, 20.0).padding(.top, 10.0)
+                Text("So sorry to hear that! Please take the first turn on the").font(.custom("Quicksand",size: 22)).fontWeight(.semibold).foregroundColor(theme.text).multilineTextAlignment(.center).padding(.horizontal, 30.0).padding(.bottom, 120.0)
                 DirectionArrow(direction: selectedDirection)
                 Spacer()
-                    .frame(height: 55.0)
-                Text(selectedDirection.rawValue).font(.custom("Quicksand",size: 60)).fontWeight(.bold).foregroundColor(theme.secondary)
+                    .frame(height: 100.0)
+                Text(selectedDirection.rawValue).font(.custom("Quicksand",size: 40)).fontWeight(.bold).foregroundColor(theme.secondary)
                 Spacer()
                 NavigationLink (destination: IntroView()) {
                     ButtonDone()

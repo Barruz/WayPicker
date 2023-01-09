@@ -13,8 +13,8 @@ struct ButtonDone: View {
         ZStack{
                     Rectangle()
                 .fill(theme.primaryButton)
-                        .frame(width: 350.0, height: 100.0)
-                    Text("DONE").font(.custom("Quicksand",                   size: 40))
+                        .frame(width: 350.0, height: 70.0)
+            Text("DONE").font(.custom("Quicksand", size: 35))
                         .fontWeight(.bold)
                         .foregroundColor(theme.secondaryButton)
                         .kerning(2)
