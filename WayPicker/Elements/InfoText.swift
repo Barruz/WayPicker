@@ -110,6 +110,11 @@ struct InfoText: View {
                     .multilineTextAlignment(.leading)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.bottom, 20.0).lineSpacing(/*@START_MENU_TOKEN@*/5.0/*@END_MENU_TOKEN@*/)
+                Text("Enjoying the app? Let us know! Hating it? Let us know! We'll be looking forward to hearing from you at waypicker.com").font(.custom("Quicksand",                   size: 18))
+                    .foregroundColor(theme.secondary)
+                    .multilineTextAlignment(.leading)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.bottom, 20.0).lineSpacing(/*@START_MENU_TOKEN@*/5.0/*@END_MENU_TOKEN@*/)
             }
             
         }

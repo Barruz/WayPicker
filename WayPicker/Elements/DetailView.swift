@@ -56,6 +56,7 @@ struct DetailView: View {
                                 requestReview()
                 }
             }
+            requestReview()
             
         }
     }
