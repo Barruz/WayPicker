@@ -20,7 +20,7 @@ struct DirectionArrowSmall: View {
                 .renderingMode(.template)
                 .foregroundColor( theme.secondaryTile)
             if (selectedThemeName != ThemeName.sketches.rawValue) {
-                LocationPointer(theme: theme).frame(width: 150*0.18, height: 150*0.18).offset(y: 150*0.28)
+                LocationPointer(theme: theme).frame(width: 140*0.18, height: 140*0.18).offset(y: 140*0.28)
             }}}
     
     func getArrow(crossroadId: Int, direction: Direction, turnNumber: String, themeName: String) -> String {

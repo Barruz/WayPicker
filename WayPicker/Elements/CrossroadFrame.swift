@@ -42,7 +42,7 @@ struct CrossroadFrame: View {
                         .frame(width: wrapper.size.width*0.87, height: wrapper.size.width*0.87)
                     selectCrossroad(id: crossroadId, referenceDimension: wrapper.size.width, theme: theme)
                     LocationPointer(theme: theme).frame(width: wrapper.size.width*0.18, height: wrapper.size.width*0.18).offset(y: wrapper.size.width*0.28)
-                }}.frame(width: 150.0, height: 150.0)
+                }}.frame(width: 140.0, height: 140.0)
             }}
     
     
