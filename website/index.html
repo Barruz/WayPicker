@@ -20,8 +20,6 @@
       content="WayPicker. The world's only mapless navigation app. Let us show you a way."
     />
     <meta name="image" content="resources/images/featured.png" />
-    <!-- TODO -->
-
     <meta
       property="og:title"
       content="WayPicker. The world's only mapless navigation app. Let us show you a way."
@@ -29,7 +27,6 @@
     <meta property="og:url" content="https://www.waypicker.com" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="resources/images/featured.png" />
-    <!-- TODO -->
     <meta
       property="og:description"
       content="WayPicker. The world's only mapless navigation app. Let us show you a way."
@@ -46,15 +43,16 @@
     <!-- TODO -->
 
     <!-- Favicon -->
-    <!-- TODO -->
-
-    <link rel="manifest" href="/site.webmanifest" />
-    <meta name="msapplication-TileColor" content="#136F63" />
-    <meta name="theme-color" content="#ffffff" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#FFF9F1" />
+    <meta name="theme-color" content="#FFF9F1" />
   </head>
 
   <body>
-    <div class="section section-menu" id="menu">
+    <div id="menu" class="section section-menu">
       <button aria-label="Logo" onclick="scrollToTop()" class="logo-wrapper">
         <img
           src="resources/images/logo.svg"
@@ -63,7 +61,7 @@
           class="logo"
           alt="Logo"
         />
-        <div class="logo-text logo-text__hidden" id="siteTitleSmall">
+        <div id="siteTitleSmall" class="logo-text logo-text__hidden">
           WayPicker
         </div>
       </button>
@@ -110,16 +108,21 @@
       <div class="home__text-small">
         Faced by a crossroad and unsure where to go? Fire up Waypicker.
       </div>
-      <div class="home__text-small__second a-way-wrapper">
-        Let us show you the way.
-        <img
-          src="resources/images/a-way.svg"
-          width="30"
-          height="26"
-          class="a-way"
-          alt=""
-        />
+      <div class="home__claim__wrapper">
+        <div>Let us show you</div>
+        <div class="a-way-wrapper">
+          <span>the</span
+          ><img
+            src="resources/images/a-way.svg"
+            width="30"
+            height="26"
+            class="a-way"
+            alt=""
+          />
+        </div>
+        <div>way.</div>
       </div>
+
       <div>
         <img
           src="resources/images/appstore.svg"
@@ -129,11 +132,7 @@
           alt="Download on the App Store"
         />
       </div>
-      <div class="android-text">
-        On Android? <a href="" class="link">Let us know</a> we really should
-        <br />
-        launch an Android app as well!
-      </div>
+      <div class="android-text">Unfortunately, we're not on Android (yet).</div>
     </div>
     <div id="how-it-works" class="section">
       <h2>How It Works</h2>
@@ -252,15 +251,19 @@
 
     <div id="cta-1" class="section cta">
       <div class="cta__title">WayPicker</div>
-      <div class="cta__text a-way-wrapper">
-        Let us show you the way.
-        <img
-          src="resources/images/a-way.svg"
-          width="30"
-          height="26"
-          class="cta__a-way"
-          alt=""
-        />
+      <div class="cta__claim__wrapper">
+        <div>Let us show you</div>
+        <div class="cta__a-way-wrapper">
+          <span>the</span
+          ><img
+            src="resources/images/a-way.svg"
+            width="30"
+            height="26"
+            class="a-way"
+            alt=""
+          />
+        </div>
+        <div>way.</div>
       </div>
       <div>
         <img
@@ -319,7 +322,7 @@
               src="resources/images/logo.svg"
               width="40"
               height="40"
-              class="bulletpoint"
+              class="bulletpoint bulletpoint-oneliner"
               alt=""
             />
           </div>
@@ -328,9 +331,9 @@
       </ul>
       <div>
         <img
-          src="resources/images/screens/01-sm.png"
+          src="resources/images/screens/screens-sm.gif"
           width="320"
-          height="640"
+          height="636"
           class="section-features__image"
           alt="Iphone with WayPicker app"
         />
@@ -339,15 +342,19 @@
 
     <div id="cta-2" class="section cta">
       <div class="cta__title">WayPicker</div>
-      <div class="cta__text a-way-wrapper">
-        Let us show you the way.
-        <img
-          src="resources/images/a-way.svg"
-          width="30"
-          height="26"
-          class="cta__a-way"
-          alt=""
-        />
+      <div class="cta__claim__wrapper">
+        <div>Let us show you</div>
+        <div class="cta__a-way-wrapper">
+          <span>the</span
+          ><img
+            src="resources/images/a-way.svg"
+            width="30"
+            height="26"
+            class="a-way"
+            alt=""
+          />
+        </div>
+        <div>way.</div>
       </div>
       <div>
         <img
@@ -417,9 +424,7 @@
         />
       </div>
       <div class="section-download__android-text">
-        On Android? <a href="" class="link">Let us know</a> we really should
-        <br />
-        launch an Android app as well!
+        Unfortunately, we're not on Android (yet).
       </div>
     </div>
     <div id="footer" class="section section-footer">

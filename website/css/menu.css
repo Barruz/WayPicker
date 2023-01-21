@@ -71,7 +71,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-left: 0;
+  padding-left: 0.5rem;
   padding-top: 35%;
 }
 

@@ -129,6 +129,10 @@ h2 {
   height: 1.8rem;
 }
 
+.bulletpoint-oneliner {
+  margin-top: -1rem;
+}
+
 .hidden {
   display: none !important;
 }
