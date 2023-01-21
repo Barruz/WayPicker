@@ -1,0 +1,299 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* 
+
+COLORS
+
+primary: #FFF9F1
+secondary: #2A2619
+accent: #706C61
+
+black: #1f2220
+white: #ffffff
+gray: #dedddd
+
+BREAKPOINTS
+
+420px for portrait phones.
+576px for larger portrait phones.
+768px for tablets.
+992px for laptops.
+1200px for large devices.
+
+*/
+
+/* HOME */
+
+.section-home {
+  padding-top: 2.5rem;
+}
+
+.home__text {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+}
+
+.home__text-small {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  padding-bottom: 1rem;
+  padding-top: 0;
+}
+
+.home__text-small__second {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.hero-image {
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.a-way-wrapper {
+  position: relative;
+}
+
+.a-way {
+  position: absolute;
+  top: -0.5rem;
+  right: 5.8rem;
+}
+
+.android-text {
+  font-variation-settings: "wght" 400;
+  font-size: 0.8rem;
+  line-height: 1.1rem;
+  padding: 1rem;
+}
+
+/* HOW IT WORKS */
+
+.section-works__row {
+  display: flex;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  gap: 1.5rem;
+}
+
+.section-works__image {
+  width: 7.5rem;
+  height: 7.5rem;
+}
+
+.section-works__text {
+  width: 50%;
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+/* HOW IT HELPS */
+
+.mockup-image {
+  width: 14rem;
+  height: auto;
+  padding-bottom: 2rem;
+}
+
+.section-helps__text {
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.section-helps__list {
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  padding-bottom: 1rem;
+  list-style-type: none;
+  padding-left: 1rem;
+}
+
+.section-helps__list > li {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  display: flex;
+}
+
+.section-helps__list > li > div:nth-child(1) {
+  padding-right: 1.5rem;
+  padding-top: 0.5rem;
+}
+
+/* CTA */
+
+.cta {
+  background-color: #2a2619;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  position: relative;
+  text-align: left;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.cta__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 40%;
+  height: auto;
+}
+
+.cta__title {
+  font-family: "Pacifico";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 61px;
+  color: #fff9f1;
+  padding-bottom: 0.8rem;
+}
+
+.cta__text {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  padding-bottom: 2rem;
+  color: #fff9f1;
+}
+
+.cta__a-way {
+  position: absolute;
+  top: -0.5rem;
+  right: 8.3rem;
+}
+
+.cta__button {
+  width: 10rem;
+  height: auto;
+}
+
+/* FEATURES */
+
+.section-features__image {
+  padding-top: 0.5rem;
+  padding-bottom: 3rem;
+}
+
+/* FAQ */
+
+.section-faq__text {
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.section-faq__question {
+  font-style: normal;
+  font-variation-settings: "wght" 700;
+  padding-top: 1rem;
+}
+
+/* DOWNLOAD */
+
+.section-download__image {
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.section-download__text {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.section-download__android-text {
+  font-size: 0.8rem;
+  line-height: 1.1rem;
+  padding-top: 1rem;
+}
+
+/* FOOTER */
+
+.section-footer {
+  background-color: #2a2619;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  border-bottom: thick solid #2a2619;
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
+  position: relative;
+  text-align: left;
+  color: #fff9f1;
+}
+
+.section-footer__image-overlay {
+  position: relative;
+  z-index: 2;
+}
+
+.section-footer__title {
+  font-variation-settings: "wght" 600;
+  font-size: 25px;
+  line-height: 31px;
+  padding-bottom: 2rem;
+}
+
+.section-footer__text-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 1rem;
+}
+
+.section-footer__text-wrapper > div:nth-child(2) {
+  text-align: right;
+}
+
+.section-footer__text {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.section-footer__text > a {
+  font-variation-settings: "wght" 600;
+  font-size: 1.1rem;
+  color: #fff9f1;
+}
+
+.section-footer__text > a > li {
+  padding-bottom: 0.8rem;
+}
+
+.section-footer__button-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.section-footer__button-row > div:nth-child(1) {
+  margin-left: -3px;
+}
+
+.section-footer__scroll-to-top {
+  color: #fff9f1;
+  padding-top: 1.5rem;
+  font-size: 4rem;
+  line-height: 2rem;
+  margin-bottom: -0.8rem;
+  margin-right: -0.8rem;
+}

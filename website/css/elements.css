@@ -1,0 +1,181 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* ELEMENTS */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  position: relative;
+  font-family: "Quicksand", sans-serif;
+  font-size: medium;
+  background-color: #fff9f1;
+  text-align: center;
+}
+
+font {
+  color: #2a2619;
+  font-style: normal;
+  font-weight: 600;
+}
+
+a {
+  color: #2a2619;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+h1 {
+  font-family: "Pacifico", serif;
+  font-family: "Pacifico";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 88px;
+  background: linear-gradient(180.91deg, #2a2619 0.78%, #706c61 99.22%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-family: "Pacifico";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 61px;
+}
+
+.section {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.title {
+  font-family: "Caveat", serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.subtitle {
+  font-family: "Caveat", serif;
+  font-weight: 400;
+  margin: 0 0 1.5rem 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.link {
+  display: inline-block;
+  line-height: 1.3rem;
+  color: #706c61;
+  text-decoration: none;
+  border-bottom: solid 1px #706c61;
+  cursor: pointer;
+}
+
+.link:hover,
+.link:focus {
+  color: #ffb101;
+  border-bottom-color: #ffb101;
+}
+
+.logo {
+  height: 3.5rem;
+  margin-left: -2rem;
+}
+
+.logo-text {
+  font-family: "Pacifico", serif;
+  color: #2a2619;
+  display: flex;
+  align-self: center;
+  padding-left: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.logo-text__hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 0 2s linear;
+}
+
+.logo-text__visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
+}
+
+.scroll-disabled {
+  overflow: hidden;
+}
+
+.bulletpoint {
+  height: 1.8rem;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.hidden-scroll {
+  overflow: hidden !important;
+}
+
+@media (min-width: 420px) {
+  .section {
+    padding: 0 2.5rem 0 2.5rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .section {
+    padding: 0 4rem 0 4rem;
+  }
+
+  .title {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .subtitle {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .section {
+    padding: 0 5rem 0 5rem;
+  }
+
+  .title {
+    text-align: left;
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .subtitle {
+    text-align: left;
+    margin: 0 0 1.5rem 0;
+    font-size: 1.5rem;
+  }
+
+  .logo {
+    margin-left: -3rem;
+  }
+}

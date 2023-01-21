@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+  prefix="fb: http://ogp.me/ns/fb#"
+>
+  <head>
+    <title>WayPicker: The world's only mapless navigation app</title>
+
+    <link rel="canonical" href="https://waypicker.com/" />
+
+    <meta charset="UTF-8" />
+    <meta name="author" content="Orbitus" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=5"
+    />
+    <meta
+      name="description"
+      content="WayPicker. The world's only mapless navigation app. Let us show you a way."
+    />
+    <meta name="image" content="resources/images/featured.png" />
+    <!-- TODO -->
+
+    <meta
+      property="og:title"
+      content="WayPicker. The world's only mapless navigation app. Let us show you a way."
+    />
+    <meta property="og:url" content="https://www.waypicker.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="resources/images/featured.png" />
+    <!-- TODO -->
+    <meta
+      property="og:description"
+      content="WayPicker. The world's only mapless navigation app. Let us show you a way."
+    />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/elements.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/purecookie.css" />
+
+    <!-- Google tag (gtag.js) -->
+    <!-- TODO -->
+
+    <!-- Favicon -->
+    <!-- TODO -->
+
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#136F63" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+
+  <body>
+    <div class="section section-menu" id="menu">
+      <button aria-label="Logo" onclick="scrollToTop()" class="logo-wrapper">
+        <img
+          src="resources/images/logo.svg"
+          width="40"
+          height="40"
+          class="logo"
+          alt="Logo"
+        />
+        <div class="logo-text logo-text__hidden" id="siteTitleSmall">
+          WayPicker
+        </div>
+      </button>
+      <div
+        role="button"
+        aria-label="Menu"
+        onclick="toggleMenu(this)"
+        class="hamburger-wrapper"
+      >
+        <div class="hamburger-icon">
+          <div class="hamburger-icon__inner-block"></div>
+        </div>
+        <ul class="section-menu__links">
+          <a href="#home"><li>Home</li></a>
+          <a href="#how-it-works"><li>How It Works</li></a>
+          <a href="#how-it-helps"><li>How It Helps</li></a>
+          <a href="#features"><li>Features</li></a>
+          <a href="#faq"><li>FAQ</li></a>
+          <a href="#download"><li>Download</li></a>
+        </ul>
+      </div>
+      <ul class="section-menu__links-lg">
+        <a href="#home"><li>Home</li></a>
+        <a href="#how-it-works"><li>How It Works</li></a>
+        <a href="#how-it-helps"><li>How It Helps</li></a>
+        <a href="#features"><li>Features</li></a>
+        <a href="#faq"><li>FAQ</li></a>
+        <a href="#download"><li>Download</li></a>
+      </ul>
+    </div>
+
+    <div id="home" class="section section-home">
+      <h1>WayPicker</h1>
+      <div class="home__text">The world's only mapless navigation app</div>
+      <div>
+        <img
+          src="resources/images/hero-sm.jpg"
+          width="640"
+          height="482"
+          class="hero-image"
+          alt="Woman holding phone with WayPicker app"
+        />
+      </div>
+      <div class="home__text-small">
+        Faced by a crossroad and unsure where to go? Fire up Waypicker.
+      </div>
+      <div class="home__text-small__second a-way-wrapper">
+        Let us show you the way.
+        <img
+          src="resources/images/a-way.svg"
+          width="30"
+          height="26"
+          class="a-way"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="resources/images/appstore.svg"
+          width="200"
+          height="70"
+          class=""
+          alt="Download on the App Store"
+        />
+      </div>
+      <div class="android-text">
+        On Android? <a href="" class="link">Let us know</a> we really should
+        <br />
+        launch an Android app as well!
+      </div>
+    </div>
+    <div id="how-it-works" class="section">
+      <h2>How It Works</h2>
+      <div class="section-works__row">
+        <div>
+          <img
+            src="resources/images/how-it-works1-sm.png"
+            width="238"
+            height="238"
+            class="section-works__image"
+            alt="Woman holding phone"
+          />
+        </div>
+        <div class="section-works__text">
+          Standing before a crossroad and no idea where to go? Fire up
+          WayPicker.
+        </div>
+      </div>
+      <div class="section-works__row">
+        <div class="section-works__text">
+          Tap the image that looks like the crossroad in front of you.
+        </div>
+        <div>
+          <img
+            src="resources/images/how-it-works2-sm.png"
+            width="238"
+            height="238"
+            class="section-works__image"
+            alt="Woman holding phone"
+          />
+        </div>
+      </div>
+      <div class="section-works__row">
+        <div>
+          <img
+            src="resources/images/how-it-works3-sm.png"
+            width="238"
+            height="238"
+            class="section-works__image"
+            alt="Woman holding phone"
+          />
+        </div>
+        <div class="section-works__text">
+          The app will tell you where to go.
+        </div>
+      </div>
+    </div>
+    <div id="how-it-helps" class="section">
+      <h2>How It Helps</h2>
+      <div>
+        <img
+          src="resources/images/mockup-phone-features.png"
+          width="444"
+          height="640"
+          class="mockup-image"
+          alt="Iphone with WayPicker app"
+        />
+      </div>
+      <div class="section-helps__text">
+        WayPicker takes away the burden of making a decision. It offers an
+        impartial answer to the question: Which way should I go?
+      </div>
+      <ul class="section-helps__list">
+        <li>
+          <div>
+            <img
+              src="resources/images/logo.svg"
+              width="40"
+              height="40"
+              class="bulletpoint"
+              alt=""
+            />
+          </div>
+          <div>
+            Maybe you’re visiting a new city and aren’t sure which of its nooks
+            and crannies are worth exploring.
+          </div>
+        </li>
+        <li>
+          <div>
+            <img
+              src="resources/images/logo.svg"
+              width="40"
+              height="40"
+              class="bulletpoint"
+              alt=""
+            />
+          </div>
+          <div>
+            Perhaps you want to play a small game with your friends: who’ll find
+            the pub first, using WayPicker?
+          </div>
+        </li>
+        <li>
+          <div>
+            <img
+              src="resources/images/logo.svg"
+              width="40"
+              height="40"
+              class="bulletpoint"
+              alt=""
+            />
+          </div>
+          <div>Or you need a randomizer app for an urban puzzle hunt.</div>
+        </li>
+      </ul>
+      <div class="section-helps__text">
+        Finally there’s that one situation when you are actually lost. There’s
+        no reception, you forgot to download the map and night’s approaching
+        fast.
+      </div>
+      <div class="section-helps__text">
+        Why not ask an app to pick a way back?
+      </div>
+    </div>
+
+    <div id="cta-1" class="section cta">
+      <div class="cta__title">WayPicker</div>
+      <div class="cta__text a-way-wrapper">
+        Let us show you the way.
+        <img
+          src="resources/images/a-way.svg"
+          width="30"
+          height="26"
+          class="cta__a-way"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="resources/images/appstore-light.svg"
+          width="155"
+          height="51"
+          class="cta__button"
+          alt="Download on the App Store"
+        />
+      </div>
+      <img
+        src="resources/images/compass-cta.png"
+        width="390"
+        height="419"
+        class="cta__image"
+        alt=""
+      />
+    </div>
+
+    <div id="features" class="section">
+      <h2>Features</h2>
+
+      <ul class="section-helps__list">
+        <li>
+          <div>
+            <img
+              src="resources/images/logo.svg"
+              width="40"
+              height="40"
+              class="bulletpoint"
+              alt=""
+            />
+          </div>
+          <div>
+            Six crossroad options. They'll match most crossroads you’ll meet out
+            there.
+          </div>
+        </li>
+        <li>
+          <div>
+            <img
+              src="resources/images/logo.svg"
+              width="40"
+              height="40"
+              class="bulletpoint"
+              alt=""
+            />
+          </div>
+          <div>
+            A default option in case you’re faced by a super-specific crossroad.
+          </div>
+        </li>
+        <li>
+          <div>
+            <img
+              src="resources/images/logo.svg"
+              width="40"
+              height="40"
+              class="bulletpoint"
+              alt=""
+            />
+          </div>
+          <div>Three skins & dark mode support.</div>
+        </li>
+      </ul>
+      <div>
+        <img
+          src="resources/images/screens/01-sm.png"
+          width="320"
+          height="640"
+          class="section-features__image"
+          alt="Iphone with WayPicker app"
+        />
+      </div>
+    </div>
+
+    <div id="cta-2" class="section cta">
+      <div class="cta__title">WayPicker</div>
+      <div class="cta__text a-way-wrapper">
+        Let us show you the way.
+        <img
+          src="resources/images/a-way.svg"
+          width="30"
+          height="26"
+          class="cta__a-way"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="resources/images/appstore-light.svg"
+          width="155"
+          height="51"
+          class="cta__button"
+          alt="Download on the App Store"
+        />
+      </div>
+      <img
+        src="resources/images/compass-cta.png"
+        width="390"
+        height="419"
+        class="cta__image"
+        alt=""
+      />
+    </div>
+    <div id="faq" class="section">
+      <h2>FAQ</h2>
+      <div class="section-faq__text section-faq__question">
+        But how does the app know where I’m going?
+      </div>
+      <div class="section-faq__text">
+        It doesn’t. You’ll probably reach your destination eventually. Or not,
+        but you’ll have explored your surroundings pretty closely by the time
+        you decide to switch to an actual navigation app.
+      </div>
+      <div class="section-faq__text">
+        WayPicker simply lets you move the responsibility for making a choice to
+        someone (something) else. Like flipping a coin. Or rolling a die.
+      </div>
+      <div class="section-faq__text section-faq__question">
+        Why would anyone develop this?!
+      </div>
+      <div class="section-faq__text">
+        We originally created WayPicker as a randomizing element in a outdoor
+        puzzle hunt. Now we're sending it out into the world for others to enjoy
+        as well!
+      </div>
+      <div class="section-faq__text section-faq__question">
+        The WayPicker application is meant for entertainment purposes only. Use
+        it at your own risk!
+      </div>
+    </div>
+    <div id="download" class="section">
+      <h2>Download</h2>
+      <div>
+        <img
+          src="resources/images/mockup-phone-download-sm.jpg"
+          width="1200"
+          height="801"
+          class="section-download__image"
+          alt="Iphone with WayPicker app"
+        />
+      </div>
+      <div class="section-download__text">
+        Download the world’s only mapless nav app today. Let us show you a way.
+      </div>
+      <div>
+        <img
+          src="resources/images/appstore.svg"
+          width="200"
+          height="70"
+          class=""
+          alt="Download on the App Store"
+        />
+      </div>
+      <div class="section-download__android-text">
+        On Android? <a href="" class="link">Let us know</a> we really should
+        <br />
+        launch an Android app as well!
+      </div>
+    </div>
+    <div id="footer" class="section section-footer">
+      <div class="section-footer__title section-footer__image-overlay">
+        Ⓒ 2023 WayPicker
+      </div>
+      <div class="section-footer__text-wrapper section-footer__image-overlay">
+        <ul class="section-footer__text">
+          <a href="#home"><li>Home</li></a>
+          <a href="#how-it-works"><li>How It Works</li></a>
+          <a href="#how-it-helps"><li>How It Helps</li></a>
+          <a href="#features"><li>Features</li></a>
+        </ul>
+        <ul class="section-footer__text">
+          <a href="#faq"><li>FAQ</li></a>
+          <a href="terms-of-use"><li>Terms of Use</li></a>
+          <a href="cookies"><li>Cookies</li></a>
+        </ul>
+      </div>
+      <div class="section-footer__button-row">
+        <div>
+          <img
+            src="resources/images/appstore-light.svg"
+            width="155"
+            height="51"
+            class="cta__button"
+            alt="Download on the App Store"
+          />
+        </div>
+        <button
+          aria-label="Scroll to top"
+          onclick="scrollToTop()"
+          class="section-footer__scroll-to-top"
+        >
+          ⌃
+        </button>
+      </div>
+
+      <img
+        src="resources/images/compass-cta.png"
+        width="390"
+        height="419"
+        class="cta__image"
+        alt=""
+      />
+    </div>
+  </body>
+
+  <script src="js/main.js"></script>
+  <script src="js/modernizr.js"></script>
+  <!--<script src="js/purecookie.js"></script> -->
+</html>
