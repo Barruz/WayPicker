@@ -32,7 +32,7 @@ struct DetailView: View {
             ZStack{
                 CrossroadWrapper(crossroadId: crossroadId, directions: directions, staticTheme: nil)
                 DirectionArrowSmall(crossroadId: crossroadId, direction: selectedDirection, turnNumber: turnNumber)
-            }.padding(.top, 50.0)
+            }.padding(.top, 60.0)
             Spacer()
             DirectionArrow(direction: selectedDirection)
             Spacer()
