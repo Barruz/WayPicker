@@ -106,7 +106,7 @@
 @media (min-width: 768px) {
   .menu__contentbox__visible > .section-menu__links {
     font-size: xx-large;
-    padding-top: 28%;
+    padding-top: 15%;
   }
 
   .menu__contentbox__visible > .section-menu__links li {

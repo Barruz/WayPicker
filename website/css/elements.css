@@ -162,6 +162,13 @@ h2 {
   }
 }
 
+@media (min-width: 768px) {
+  h2 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+}
+
 @media (min-width: 992px) {
   .section {
     padding: 0 5rem 0 5rem;

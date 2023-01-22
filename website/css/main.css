@@ -83,6 +83,29 @@ BREAKPOINTS
   }
 }
 
+@media (min-width: 768px) {
+  .home__text,
+  .home__text-small,
+  .home__claim__wrapper {
+    font-variation-settings: "wght" 500;
+  }
+
+  .home__text-small {
+    padding: 0 6rem 1.5rem 6rem;
+  }
+
+  .a-way-wrapper {
+    width: 2.5rem;
+  }
+
+  .a-way {
+    width: 37px;
+    height: 37px;
+    top: -1rem;
+    right: 0;
+  }
+}
+
 /* HOW IT WORKS */
 
 .section-works__row {
@@ -109,6 +132,13 @@ BREAKPOINTS
 @media (min-width: 576px) {
   .section-works__row {
     justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-works__text {
+    font-size: 1.3rem;
+    line-height: 2rem;
   }
 }
 
@@ -145,6 +175,23 @@ BREAKPOINTS
 .section-helps__list > li > div:nth-child(1) {
   padding-right: 1.5rem;
   padding-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .mockup-image {
+    width: 16rem;
+    padding-bottom: 4rem;
+  }
+
+  .section-helps__text,
+  .section-helps__list {
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+
+  .helps__bulletpoint-oneliner {
+    margin-top: -1rem;
+  }
 }
 
 /* CTA */
@@ -197,6 +244,12 @@ BREAKPOINTS
   height: auto;
 }
 
+@media (min-width: 768px) {
+  .cta__image {
+    width: 30%;
+  }
+}
+
 /* FEATURES */
 
 .section-features__image {
@@ -204,6 +257,12 @@ BREAKPOINTS
   padding-bottom: 3rem;
   width: 100%;
   height: auto;
+}
+
+@media (min-width: 768px) {
+  .section-features__image {
+    width: 50%;
+  }
 }
 
 /* FAQ */
@@ -247,6 +306,13 @@ BREAKPOINTS
   .section-download__text {
     font-size: 1.3rem;
     line-height: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-download__text {
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 }
 

@@ -10,7 +10,8 @@ function toggleBodyScroll() {
 
 function toggleMenuScrollForLargeScreenSizes(menu) {
   var viewportHeight = window.innerHeight;
-  if (viewportHeight > 700) {
+  var viewportWidth = window.innerWidth;
+  if (viewportHeight > 700 || viewportHeight > viewportWidth) {
     menu.classList.toggle("hidden-scroll");
   }
 }
