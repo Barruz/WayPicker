@@ -210,3 +210,14 @@ h2 {
     opacity: 1;
   }
 }
+
+@media (min-width: 1200px) {
+  body {
+    max-width: 1600px;
+    margin: auto;
+  }
+
+  .section-menu {
+    max-width: 1600px;
+  }
+}

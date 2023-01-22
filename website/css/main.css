@@ -178,6 +178,7 @@ BREAKPOINTS
 .section-works__image {
   width: 7.5rem;
   height: 7.5rem;
+  border-radius: 20px;
 }
 
 .section-works__text {
