@@ -163,15 +163,11 @@
   }
 
   .section-menu__links-lg {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    text-transform: uppercase;
     font-size: large;
     list-style-type: none;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
+    font-variation-settings: "wght" 600;
   }
 
   .section-menu__links-lg > a {

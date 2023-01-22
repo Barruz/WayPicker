@@ -106,6 +106,66 @@ BREAKPOINTS
   }
 }
 
+@media (min-width: 992px) {
+  .hero-image {
+    display: none;
+  }
+
+  .section-home {
+    width: calc(100% - 10rem);
+    height: calc(100vh - 3.5rem);
+    background-image: url("../resources/images/hero-lg.jpg");
+    background-position: left top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-right: 10rem;
+    padding-left: 0;
+    background-origin: content-box;
+  }
+
+  .section-home__wrapper {
+    margin-right: -10rem;
+    height: 100%;
+    background: linear-gradient(
+      88.43deg,
+      rgba(217, 217, 217, 0) 44.97%,
+      rgba(255, 249, 241, 0.89) 68.65%
+    );
+    padding-top: 2rem;
+    padding-right: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .home__text,
+  .home__text-small,
+  .home__claim__wrapper {
+    font-variation-settings: "wght" 700;
+    font-size: 1.5rem;
+    color: #1f2220;
+    width: 30%;
+    text-align: right;
+    padding: 1rem 0 1rem 0;
+    justify-content: flex-end;
+  }
+
+  .home__claim__wrapper {
+    padding-bottom: 4rem;
+  }
+
+  .android-text {
+    padding-right: 0;
+  }
+
+  .a-way {
+    width: 40px;
+    height: 40px;
+    top: -1rem;
+    right: 0;
+  }
+}
+
 /* HOW IT WORKS */
 
 .section-works__row {
@@ -139,6 +199,35 @@ BREAKPOINTS
   .section-works__text {
     font-size: 1.3rem;
     line-height: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .section-works__row {
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    padding-top: 0;
+  }
+
+  .section-works__image {
+    width: 14.5rem;
+    height: 14.5rem;
+  }
+
+  .section-works__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .section-works__wrapper > div:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+
+  .section-works__text {
+    width: 80%;
+    text-align: center;
   }
 }
 
@@ -191,6 +280,19 @@ BREAKPOINTS
 
   .helps__bulletpoint-oneliner {
     margin-top: -1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .mockup-image {
+    width: 20rem;
+    padding: 0;
+  }
+
+  .section-helps__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 7rem;
   }
 }
 
@@ -250,6 +352,34 @@ BREAKPOINTS
   }
 }
 
+@media (min-width: 992px) {
+  .cta {
+    margin-top: 6rem;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .cta__title {
+    font-size: 4.3rem;
+    line-height: 7rem;
+    padding-bottom: 1rem;
+  }
+
+  .cta__claim__wrapper {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-bottom: 4rem;
+  }
+
+  .cta__a-way-wrapper {
+    width: 3rem;
+  }
+
+  .cta__image {
+    width: 20rem;
+  }
+}
+
 /* FEATURES */
 
 .section-features__image {
@@ -259,9 +389,34 @@ BREAKPOINTS
   height: auto;
 }
 
+.section-features__images-lg {
+  display: none;
+}
+
+.section-features__images-lg img {
+  width: 10rem;
+  height: auto;
+}
+
 @media (min-width: 768px) {
   .section-features__image {
     width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .section-features__wrapper {
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 6rem;
+  }
+  .section-features__image {
+    display: none;
+  }
+
+  .section-features__images-lg {
+    display: flex;
+    gap: 1rem;
   }
 }
 
@@ -278,6 +433,21 @@ BREAKPOINTS
   font-style: normal;
   font-variation-settings: "wght" 700;
   padding-top: 1rem;
+}
+
+@media (min-width: 992px) {
+  .section-faq__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .section-faq__wrapper > div {
+    width: 40%;
+  }
+
+  .section-faq {
+    padding-bottom: 6rem;
+  }
 }
 
 /* DOWNLOAD */
@@ -302,6 +472,10 @@ BREAKPOINTS
   padding-top: 1rem;
 }
 
+.section-download__claim__wrapper {
+  display: none;
+}
+
 @media (min-width: 576px) {
   .section-download__text {
     font-size: 1.3rem;
@@ -313,6 +487,61 @@ BREAKPOINTS
   .section-download__text {
     padding-left: 6rem;
     padding-right: 6rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .section-download__image {
+    display: none;
+  }
+
+  .section-download {
+    width: calc(100% - 10rem);
+    height: 90vh;
+    background-image: url("../resources/images/mockup-phone-download-lg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    background-position: right;
+    padding-top: 0;
+  }
+
+  .section-download__wrapper {
+    height: 100%;
+    background: linear-gradient(
+      89.61deg,
+      rgba(255, 249, 241, 0.89) 44.17%,
+      rgba(217, 217, 217, 0) 68.93%
+    );
+    padding-top: 1rem;
+    padding-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: -5rem;
+  }
+
+  .section-download__text {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 2rem;
+    width: 35%;
+    text-align: left;
+    font-variation-settings: "wght" 700;
+    font-size: 1.4rem;
+  }
+
+  .section-download__claim__wrapper {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    padding-bottom: 4rem;
+    font-variation-settings: "wght" 700;
+    display: flex;
+    justify-content: left;
+  }
+
+  .section-download__text-second {
+    display: none;
   }
 }
 
@@ -385,6 +614,24 @@ BREAKPOINTS
   line-height: 2rem;
   margin-bottom: -0.8rem;
   margin-right: -0.8rem;
+}
+
+@media (min-width: 992px) {
+  .section-footer {
+    margin-top: 0;
+  }
+
+  .section-footer__text-wrapper {
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10rem;
+  }
+
+  .section-footer__scroll-to-top {
+    position: relative;
+    z-index: 2;
+    margin-right: -2rem;
+  }
 }
 
 /* COOKIES */
@@ -462,5 +709,11 @@ BREAKPOINTS
 @media (min-width: 576px) {
   .section-menu__cookies > a > div {
     display: inline-block;
+  }
+}
+
+@media (min-width: 992px) {
+  .section-cookies {
+    padding: 3.5rem 20rem;
   }
 }
