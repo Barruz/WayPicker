@@ -30,7 +30,7 @@ BREAKPOINTS
 .home__text-small {
   font-size: 1.1rem;
   line-height: 1.5rem;
-  padding: 0 2rem 1.5rem 2rem;
+  padding: 0 1rem 1.5rem 1rem;
 }
 
 .home__claim__wrapper {
@@ -67,6 +67,22 @@ BREAKPOINTS
   padding: 1rem;
 }
 
+@media (min-width: 576px) {
+  .section-home {
+    padding-top: 3.5rem;
+  }
+
+  .home__text-small {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    padding: 0 2rem 1.5rem 2rem;
+  }
+
+  .home__claim__wrapper {
+    font-size: 1.3rem;
+  }
+}
+
 /* HOW IT WORKS */
 
 .section-works__row {
@@ -88,6 +104,12 @@ BREAKPOINTS
   line-height: 1.5rem;
   display: flex;
   align-items: center;
+}
+
+@media (min-width: 576px) {
+  .section-works__row {
+    justify-content: center;
+  }
 }
 
 /* HOW IT HELPS */
@@ -219,6 +241,13 @@ BREAKPOINTS
   font-size: 0.8rem;
   line-height: 1.1rem;
   padding-top: 1rem;
+}
+
+@media (min-width: 576px) {
+  .section-download__text {
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
 }
 
 /* FOOTER */

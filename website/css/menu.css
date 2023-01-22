@@ -88,15 +88,18 @@
   font-size: 2rem;
 }
 
-@media (min-width: 420px) {
-  .menu__contentbox__visible {
-    width: calc(100% - 1rem);
-  }
-}
-
 @media (min-width: 576px) {
-  .menu__contentbox__visible {
-    width: calc(100% - 2.5rem);
+  .section-menu {
+    height: 6rem;
+    padding-left: 3.5rem;
+    padding-right: 2rem;
+    width: calc(100% - 5.5rem);
+  }
+
+  .menu__contentbox__visible > .hamburger-icon {
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
   }
 }
 
