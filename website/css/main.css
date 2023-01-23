@@ -718,3 +718,22 @@ BREAKPOINTS
     padding: 3.5rem 20rem;
   }
 }
+
+/* 404 */
+
+.notfound404__text {
+  height: calc(100vh - 23rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.notfound404__text > h1 {
+  font-size: 3rem;
+  line-height: 6rem;
+}
+
+.notfound404__text > div {
+  font-variation-settings: "wght" 500;
+  line-height: 1.5rem;
+}

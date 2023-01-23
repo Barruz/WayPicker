@@ -12,60 +12,62 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 30px 30px 30px 30px;
-  background: #ffffff;
+  background: #2a2619;
   overflow: hidden;
   position: fixed;
   bottom: 30px;
   right: 30px;
   display: none;
   border-radius: none;
-  border-top: 2px solid #ffb101;
+  border-top: 2px solid #2a2619;
+  text-align: left;
 }
 
 @media (min-width: 981px) {
   .cookieConsentContainer {
     border-radius: 5px;
-    border: 2px solid #ffb101;
+    border: 2px solid #2a2619;
   }
 }
 
 .cookieConsentContainer .cookieTitle {
-  font-family: "Montserrat SemiBold", arial, "sans-serif";
-  color: #1f2220;
-  font-size: medium;
-  line-height: 1.5rem;
+  font-family: "Pacifico", "serif";
+  color: #fff9f1;
+  font-size: xx-large;
+  line-height: 3.5rem;
   display: block;
 }
 .cookieConsentContainer .cookieDesc p {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat Regular", arial, "sans-serif";
-  color: #1f2220;
-  font-size: smaller;
+  font-family: "Quicksand", arial, "sans-serif";
+  color: #fff9f1;
+  font-size: medium;
   line-height: 1.5rem;
   display: block;
   margin-top: 10px;
 }
 .cookieConsentContainer .cookieDesc a {
-  font-family: "Montserrat SemiBold", arial, "sans-serif";
-  color: #136f63;
+  font-family: "Quicksand", arial, "sans-serif";
+  color: #fff9f1;
   text-decoration: underline;
 }
 
 .cookieConsentContainer .cookieButtonRow {
   display: flex;
+  margin-top: 1rem;
 }
 
 .cookieConsentContainer .cookieButton button {
   display: inline-block;
-  font-family: "Montserrat SemiBold", arial, "sans-serif";
-  color: #ffffff;
+  font-family: "Quicksand", arial, "sans-serif";
+  color: #2a2619;
   font-size: 14px;
   font-weight: bold;
   margin-top: 14px;
   margin-right: 1rem;
-  background: #136f63;
-  border: 2px solid #136f63;
+  background: #fff9f1;
+  border: 2px solid #fff9f1;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 15px 24px;
@@ -78,21 +80,21 @@
 .cookieConsentContainer .cookieButton button:hover,
 .cookieConsentContainer .cookieButton button:active {
   cursor: pointer;
-  background: #ffb101;
-  border-color: #ffb101;
+  background: #706c61;
+  border-color: #706c61;
   color: #ffffff;
 }
 
 .cookieConsentContainer .cookieButtonReject button {
   display: inline-block;
   font-family: "Montserrat SemiBold", arial, "sans-serif";
-  color: #136f63;
+  color: #fff9f1;
   font-size: 14px;
   font-weight: bold;
-  border: 2px solid #136f63;
+  border: 2px solid #fff9f1;
   margin-top: 14px;
   margin-right: 1rem;
-  background: #ffffff;
+  background: #2a2619;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 15px 24px;
@@ -105,8 +107,8 @@
 .cookieConsentContainer .cookieButtonReject button:hover,
 .cookieConsentContainer .cookieButtonReject button:active {
   cursor: pointer;
-  border-color: #ffb101;
-  color: #ffb101;
+  border-color: #706c61;
+  color: #706c61;
 }
 
 @media (max-width: 980px) {
