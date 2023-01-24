@@ -40,7 +40,40 @@
     <link rel="stylesheet" href="css/purecookie.css" />
 
     <!-- Google tag (gtag.js) -->
-    <!-- TODO -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-5LWPCF7SVX"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("consent", "default", {
+        ad_storage: "denied",
+        analytics_storage: "denied",
+        wait_for_update: 500,
+      });
+
+      let cookieConsentGranted = !!document.cookie
+        .split("; ")
+        .find((row) => row.startsWith("cookie-accept"))
+        ?.split("=")[1];
+
+      if (cookieConsentGranted) {
+        gtag("consent", "update", {
+          ad_storage: "denied",
+          analytics_storage: "granted",
+        });
+        gtag("js", new Date());
+        gtag("config", "G-5LWPCF7SVX");
+      } else {
+        gtag("consent", "update", {
+          ad_storage: "denied",
+          analytics_storage: "denied",
+        });
+      }
+    </script>
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
