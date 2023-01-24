@@ -19,14 +19,14 @@
   right: 30px;
   display: none;
   border-radius: none;
-  border-top: 2px solid #2a2619;
+  border-top: 2px solid #fff9f1;
   text-align: left;
 }
 
 @media (min-width: 981px) {
   .cookieConsentContainer {
     border-radius: 5px;
-    border: 2px solid #2a2619;
+    border: 2px solid #fff9f1;
   }
 }
 

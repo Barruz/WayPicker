@@ -1,9 +1,9 @@
 // --- Config --- //
 var purecookieTitle = "Cookies.";
 var purecookieDesc =
-  "I use cookies to analyze traffic on my website via Google Analytics. Is this okay with you?";
+  "We use cookies to analyze traffic on my website via Google Analytics. Is this okay with you?";
 var purecookieDescCz =
-  "Na těchto stránkách využívám k analýze návštěvnosti soubory cookies (s pomocí nástroje Google Analytics). Je to v pořádku?"; // Description CZ
+  "Na těchto stránkách využíváme k analýze návštěvnosti soubory cookies (s pomocí nástroje Google Analytics). Je to v pořádku?"; // Description CZ
 var purecookieLink = '<a href="https://waypicker.com/cookies/">Cookies</a>';
 var purecookieLinkCz = '<a href="https://waypicker.com/cookies/">Cookies</a>';
 var purecookieLinkPersonalDataProcessing =
