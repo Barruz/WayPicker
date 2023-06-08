@@ -658,11 +658,19 @@ BREAKPOINTS
   padding-bottom: 0.5rem;
 }
 
-.section-footer__email > a {
+.section-footer__email {
   font-variation-settings: "wght" 500;
   font-size: 1rem;
   padding-bottom: 2rem;
-  color: white;
+}
+
+.section-footer__email > a {
+  color: #fff9f1;
+}
+
+.section-footer__email > a:active,
+.section-footer__email > a:hover {
+  color: #706c61;
 }
 
 .section-footer__text-wrapper {
