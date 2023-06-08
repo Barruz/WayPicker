@@ -655,7 +655,14 @@ BREAKPOINTS
 .section-footer__subtitle {
   font-variation-settings: "wght" 500;
   font-size: 1.1rem;
+  padding-bottom: 0.5rem;
+}
+
+.section-footer__email {
+  font-variation-settings: "wght" 500;
+  font-size: 1rem;
   padding-bottom: 2rem;
+  color: white;
 }
 
 .section-footer__text-wrapper {
