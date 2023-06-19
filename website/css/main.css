@@ -661,10 +661,17 @@ BREAKPOINTS
 .section-footer__email {
   font-variation-settings: "wght" 500;
   font-size: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.section-footer__credit {
+  font-variation-settings: "wght" 500;
+  font-size: 1rem;
   padding-bottom: 2rem;
 }
 
-.section-footer__email > a {
+.section-footer__email > a,
+.section-footer__credit > a {
   color: #fff9f1;
 }
 
